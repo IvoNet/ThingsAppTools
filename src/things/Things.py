@@ -1,5 +1,3 @@
-from time import strftime
-
 try:
     from Foundation import *
     from ScriptingBridge import *
@@ -8,8 +6,6 @@ except:
     print "Working on a Mac and having Things installed is also a must :-)."
 
 import Null
-import time, datetime
-from MyTzInfo import MyTzinfo
 
 STATUS_OPEN = 1952737647
 STATUS_CANCELED = 1952736108
@@ -37,6 +33,9 @@ class ThingsToDo(object):
     def notes(self):
         return self.todo.notes().strip()
 
+    def tags(self):
+        return ThingsTags(self.todo.tags())
+
     def area(self):
         if self.todo.area().id() is None:
             return Null
@@ -57,13 +56,29 @@ class ThingsToDo(object):
         return self.todo.status() == STATUS_CLOSED
 
     def creationDate(self):
-        # return datetime.date.fromtimestamp(self.todo.creationDate())
         # return time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
-        tm = time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
-        return datetime.datetime(tm.tm_year, tm.tm_mon, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, tzinfo=MyTzinfo())
+        # tm = time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
+        # return datetime.datetime(tm.tm_year, tm.tm_mon, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, tzinfo=MyTzinfo())
         # return datetime.datetime(time.mktime(tm))
         #2013-06-16 18:01:17 +0000
-        # return self.todo.creationDate().descriptionWithCalendarFormat_timeZone_locale_("%Y-%m-%d %H:%M:%S", "+2", "Nl")
+        return self.todo.creationDate()
+
+    def __check_date__(self, date):
+        if date is None:
+            return Null
+        return date
+
+    def activationDate(self):
+        return self.__check_date__(self.todo.activationDate())
+
+    def completionDate(self):
+        return self.__check_date__(self.todo.completionDate())
+
+    def dueDate(self):
+        return self.__check_date__(self.todo.dueDate())
+
+    def cancellationDate(self):
+        return self.__check_date__(self.todo.cancellationDate())
 
 
 class ThingsToDos(object):
@@ -74,6 +89,15 @@ class ThingsToDos(object):
     def __init__(self, todoList):
         self.todos = []
         [self.todos.append(ThingsToDo(x)) for x in todoList]
+
+    def __str__(self):
+        ret = "ToDos = {"
+        ret += ", ".join([str(x) for x in self.todos])
+        ret += "}"
+        return ret
+
+    def __repr__(self):
+        return self.__str__()
 
     def __iter__(self):
         return self.todos.__iter__()
@@ -201,6 +225,57 @@ class ThingsLists(object):
         return self.lists.objectWithID_(identifier)
 
 
+class ThingsTag(object):
+    def __init__(self, item):
+        self.tag = item
+
+    def __str__(self):
+        return self.tag.name().encode(UTF_8)
+
+    def __repr__(self):
+        return self.__str__()
+
+    def name(self):
+        return self.tag.name().encode(UTF_8)
+
+    def id(self):
+        return self.tag.id().encode(UTF_8)
+
+    def parentTag(self):
+        return self.tag.parentTag().encode(UTF_8)
+
+    def toDos(self):
+        return ThingsToDos(self.tag.toDos())
+
+
+class ThingsTags(object):
+    def __init__(self, items):
+        self.tags = []
+        if len(items) > 0:
+            if type(items[0]) is ThingsTag:
+                self.tags = items
+            else:
+                [self.tags.append(ThingsTag(x)) for x in items]
+
+    def __str__(self):
+        ret = "Tags = {"
+        ret += ", ".join([str(x) for x in self.tags])
+        ret += "}"
+        return ret
+
+    def __repr__(self):
+        return self.__str__()
+
+    def __iter__(self):
+        return self.tags.__iter__()
+
+    def __getitem__(self, item):
+        for tag in self.tags:
+            if tag.name is item.encode(UTF_8):
+                return tag
+        return Null
+
+
 class ThingsApp(object):
     """Wrapper for Things.app"""
 
@@ -240,6 +315,9 @@ class ThingsApp(object):
     def all_areas(self):
         """retrieve all areas from Things"""
         return ThingsAreas(self.Things.areas())
+
+    def tags(self):
+        return ThingsTags(self.Things.tags())
 
 
 

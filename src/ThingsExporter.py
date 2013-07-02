@@ -6,9 +6,15 @@ from things.Things import ThingsApp
 
 if __name__ == "__main__":
     Things = ThingsApp()
+    # print Things.tags()
+
+    # for tag in Things.tags():
+    #     print tag, tag.toDos()
 
     # x = Things.areas()
     # print x
+
+    Things.logCompleted()
 
     for item in Things["Today"]:
         print 80 * "="
@@ -19,12 +25,12 @@ if __name__ == "__main__":
         print "area            :", item.area(), item.area().id()
         print "project         :", item.project()
         print "is open item    :", item.is_open()
-        # print "tagNames        :",item.tagNames()
+        print "tagNames        :", item.tags()
         print "creationDate    :", item.creationDate()
-        # print "activationDate  :",item.activationDate()
-        # print "completionDate  :",item.completionDate()
-        # print "completionDate  :",item.dueDate()
-        # print "cancellationDate:",item.cancellationDate()
+        print "activationDate  :", item.activationDate()
+        print "completionDate  :", item.completionDate()
+        print "dueDate         :", item.dueDate()
+        print "cancellationDate:", item.cancellationDate()
 
 
 
