@@ -7,6 +7,9 @@ from things.Things import ThingsApp
 if __name__ == "__main__":
     Things = ThingsApp()
 
+    x = Things.areas()
+    print x
+
     for item in Things["Today"]:
         print 80 * "="
         print item
@@ -15,13 +18,14 @@ if __name__ == "__main__":
         print "notes           :", item.notes()
         print "area            :", item.area(), item.area().id()
         print "project         :", item.project()
-        # print "status          :",item.status()
+        print "is open item    :", item.is_open()
         # print "tagNames        :",item.tagNames()
         # print "creationDate    :",item.creationDate()
         # print "activationDate  :",item.activationDate()
         # print "completionDate  :",item.completionDate()
         # print "completionDate  :",item.dueDate()
         # print "cancellationDate:",item.cancellationDate()
+
 
 
         # for item in dir(Things):
