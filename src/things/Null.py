@@ -27,9 +27,6 @@ The usual placeholder object for "there's nothing here" is None,
 but we may be able to do better than that by defining a class
 meant exactly to act as such a placeholder
 
-Usage:
-import IvoNet.Patterns.Null as Null
-
 Discussion
 You can use an instance of the Null class instead of the primitive value None.
 By using such an instance as a placeholder, instead of None, you can avoid many
@@ -41,7 +38,7 @@ Languages of Programming [PLoP 96, September 1996].)
 This recipe's Null class ignores all parameters passed when constructing or
 calling instances, as well as any attempt to set or delete attributes. Any call
 or attempt to access an attribute (or a method, since Python does not
-distinguish between the two, calling _ _getattr_ _ either way) returns the same
+distinguish between the two, calling __getattr__ either way) returns the same
 Null instance (i.e., selfno reason to create a new instance). For example, if
 you have a computation such as:
 
