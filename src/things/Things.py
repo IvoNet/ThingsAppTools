@@ -1,3 +1,5 @@
+from time import strftime
+
 try:
     from Foundation import *
     from ScriptingBridge import *
@@ -6,6 +8,8 @@ except:
     print "Working on a Mac and having Things installed is also a must :-)."
 
 import Null
+import time, datetime
+from MyTzInfo import MyTzinfo
 
 STATUS_OPEN = 1952737647
 STATUS_CANCELED = 1952736108
@@ -51,6 +55,15 @@ class ThingsToDo(object):
 
     def is_closed(self):
         return self.todo.status() == STATUS_CLOSED
+
+    def creationDate(self):
+        # return datetime.date.fromtimestamp(self.todo.creationDate())
+        # return time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
+        tm = time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
+        return datetime.datetime(tm.tm_year, tm.tm_mon, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, tzinfo=MyTzinfo())
+        # return datetime.datetime(time.mktime(tm))
+        #2013-06-16 18:01:17 +0000
+        # return self.todo.creationDate().descriptionWithCalendarFormat_timeZone_locale_("%Y-%m-%d %H:%M:%S", "+2", "Nl")
 
 
 class ThingsToDos(object):

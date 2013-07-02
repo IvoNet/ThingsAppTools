@@ -1,0 +1,1075 @@
+/usr/local/bin/python2.7 /Users/ivonet/dev/github/ThingsExporter/src/ThingsExporter.py
+Help on SBElementArray in module objc object:
+
+class SBElementArray(NSMutableArray)
+ |  Method resolution order:
+ |      SBElementArray
+ |      NSMutableArray
+ |      NSArray
+ |      NSObject
+ |      __builtin__.objc.objc_class
+ |      __builtin__.object
+ |  
+ |  Methods defined here:
+ |  
+ |  __iter__ lambda self
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  addObject_
+ |  
+ |  allObjects
+ |  
+ |  arrayByApplyingSelector_
+ |  
+ |  arrayByApplyingSelector_withObject_
+ |  
+ |  classForCoder
+ |  
+ |  context
+ |  
+ |  copyWithZone_
+ |  
+ |  count
+ |  
+ |  dealloc
+ |  
+ |  debugDescription
+ |  
+ |  description
+ |  
+ |  descriptionWithLocale_
+ |  
+ |  descriptorForExpression_
+ |  
+ |  elementClass
+ |  
+ |  elementCode
+ |  
+ |  encodeWithCoder_
+ |  
+ |  filterUsingPredicate_
+ |  
+ |  filteredArrayUsingPredicate_
+ |  
+ |  get
+ |  
+ |  init
+ |  
+ |  initWithArray_copyItems_
+ |  
+ |  initWithCoder_
+ |  
+ |  initWithContentsOfFile_
+ |  
+ |  initWithContentsOfURL_
+ |  
+ |  initWithObjects_
+ |  
+ |  initWithObjects_count_
+ |  
+ |  initWithParent_elementCode_
+ |  
+ |  insertObject_atIndex_
+ |  
+ |  isEqual_
+ |  
+ |  lastObject
+ |  
+ |  makeObjectsPerformSelector_
+ |  
+ |  makeObjectsPerformSelector_withObject_
+ |  
+ |  mutableCopyWithZone_
+ |  
+ |  objectAtIndex_
+ |  
+ |  objectAtLocation_
+ |  
+ |  objectWithID_
+ |  
+ |  objectWithKeyForm_keyData_
+ |  
+ |  objectWithName_
+ |  
+ |  objectsAtIndexes_
+ |  
+ |  parent
+ |  
+ |  qualifiedSpecifier
+ |  
+ |  removeAllObjects
+ |  
+ |  removeLastObject
+ |  
+ |  removeObjectAtIndex_
+ |  
+ |  removeObjectWithID_
+ |  
+ |  removeObjectWithName_
+ |  
+ |  removeObject_
+ |  
+ |  replaceObjectAtIndex_withObject_
+ |  
+ |  setParent_
+ |  
+ |  setValue_forKey_
+ |  
+ |  subarrayWithRange_
+ |  
+ |  valueForKey_
+ |  
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from NSMutableArray:
+ |  
+ |  __delitem__ = __delitem__removeObjectAtIndex_(self, idx)
+ |  
+ |  __delslice__ = __delslice__removeObjectAtIndex_(self, i, j)
+ |  
+ |  __setitem__ = __setitem__replaceObjectAtIndex_withObject_(self, idx, anObject)
+ |  
+ |  __setslice__ = __setslice__replaceObjectAtIndex_withObject_(self, i, j, seq)
+ |  
+ |  append lambda self, item
+ |  
+ |  clear lambda self
+ |  
+ |  extend = extend_addObjectsFromArray_(self, anArray)
+ |  
+ |  insert = insert_insertObject_atIndex_(self, idx, item)
+ |  
+ |  pop = pop_removeObjectAtIndex_(self, idx=-1)
+ |  
+ |  remove = remove_removeObjectAtIndex_(self, obj)
+ |  
+ |  reverse = reverse_exchangeObjectAtIndex_withObjectAtIndex_(self)
+ |  
+ |  sort(self, key=None, reverse=False, cmpfunc=<built-in function cmp>)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from NSMutableArray:
+ |  
+ |  __new__
+ |  
+ |  addArray_BU_
+ |  
+ |  addBool_BU_
+ |  
+ |  addCGFloat_BU_
+ |  
+ |  addData_BU_
+ |  
+ |  addDictionary_BU_
+ |  
+ |  addDouble_BU_
+ |  
+ |  addFourCharCode_BU_
+ |  
+ |  addInteger_BU_
+ |  
+ |  addObjectsFromArray_
+ |  
+ |  addObjectsFromArray_range_
+ |  
+ |  addObjectsFromOrderedSet_
+ |  
+ |  addObjectsFromOrderedSet_range_
+ |  
+ |  addObjectsFromSet_
+ |  
+ |  addObjects_count_
+ |  
+ |  addPoint_BU_
+ |  
+ |  addRange_
+ |  
+ |  addRect_BU_
+ |  
+ |  addSInt64_BU_
+ |  
+ |  addString_BU_
+ |  
+ |  addURL_BU_
+ |  
+ |  comboBoxCell_indexOfItemWithStringValue_
+ |  
+ |  comboBoxCell_objectValueForItemAtIndex_
+ |  
+ |  exchangeObjectAtIndex_withObjectAtIndex_
+ |  
+ |  initWithCapacity_
+ |  
+ |  insertArray_BU_atIndex_
+ |  
+ |  insertBool_BU_atIndex_
+ |  
+ |  insertCGFloat_BU_atIndex_
+ |  
+ |  insertData_BU_atIndex_
+ |  
+ |  insertDictionary_BU_atIndex_
+ |  
+ |  insertDouble_BU_atIndex_
+ |  
+ |  insertFourCharCode_BU_atIndex_
+ |  
+ |  insertInteger_BU_atIndex_
+ |  
+ |  insertObjectsFromArray_atIndex_
+ |  
+ |  insertObjectsFromArray_range_atIndex_
+ |  
+ |  insertObjectsFromOrderedSet_atIndex_
+ |  
+ |  insertObjectsFromOrderedSet_range_atIndex_
+ |  
+ |  insertObjectsFromSet_atIndex_
+ |  
+ |  insertObjects_atIndexes_
+ |  
+ |  insertObjects_count_atIndex_
+ |  
+ |  insertPoint_BU_atIndex_
+ |  
+ |  insertRange_atIndex_
+ |  
+ |  insertRect_BU_atIndex_
+ |  
+ |  insertSInt64_BU_atIndex_
+ |  
+ |  insertString_BU_atIndex_
+ |  
+ |  insertURLFE_BU_atIndex_
+ |  
+ |  moveObjectsAtIndexes_toIndex_
+ |  
+ |  numberOfItemsInComboBoxCell_
+ |  
+ |  removeFirstObject
+ |  
+ |  removeLastRange
+ |  
+ |  removeObjectIdenticalTo_
+ |  
+ |  removeObjectIdenticalTo_inRange_
+ |  
+ |  removeObject_inRange_
+ |  
+ |  removeObjectsAtIndexes_
+ |  
+ |  removeObjectsFromIndices_numIndices_
+ |  
+ |  removeObjectsInArray_
+ |  
+ |  removeObjectsInArray_range_
+ |  
+ |  removeObjectsInOrderedSet_
+ |  
+ |  removeObjectsInOrderedSet_range_
+ |  
+ |  removeObjectsInRange_
+ |  
+ |  removeObjectsInRange_inArray_
+ |  
+ |  removeObjectsInRange_inArray_range_
+ |  
+ |  removeObjectsInRange_inOrderedSet_
+ |  
+ |  removeObjectsInRange_inOrderedSet_range_
+ |  
+ |  removeObjectsInRange_inSet_
+ |  
+ |  removeObjectsInSet_
+ |  
+ |  removeRangeAtIndex_
+ |  
+ |  replaceObject_
+ |  
+ |  replaceObject_inRange_
+ |  
+ |  replaceObjectsAtIndexes_withObjects_
+ |  
+ |  replaceObjectsInRange_withObjectsFromArray_
+ |  
+ |  replaceObjectsInRange_withObjectsFromArray_range_
+ |  
+ |  replaceObjectsInRange_withObjectsFromOrderedSet_
+ |  
+ |  replaceObjectsInRange_withObjectsFromOrderedSet_range_
+ |  
+ |  replaceObjectsInRange_withObjectsFromSet_
+ |  
+ |  replaceObjectsInRange_withObjects_count_
+ |  
+ |  replaceRangeAtIndex_withRange_
+ |  
+ |  rollObjectsInRange_by_
+ |  
+ |  setArray_
+ |  
+ |  setObject_atIndex_
+ |  
+ |  setObject_atIndexedSubscript_
+ |  
+ |  setOrderedSet_
+ |  
+ |  setSet_
+ |  
+ |  sortRange_options_usingComparator_
+ |  
+ |  sortUsingComparator_
+ |  
+ |  sortUsingDescriptors_
+ |  
+ |  sortUsingFunction_context_
+ |  
+ |  sortUsingFunction_context_range_
+ |  
+ |  sortUsingSelector_
+ |  
+ |  sortWithOptions_usingComparator_
+ |  
+ |  topologicalSortUsingComparison_
+ |  
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from NSArray:
+ |  
+ |  __add__ = nsarray_add(self, other)
+ |  
+ |  __contains__ = containsObject_has_key(self, elem)
+ |  
+ |  __copy__(self)
+ |  
+ |  __getitem__ = __getitem__objectAtIndex_(self, idx)
+ |  
+ |  __getslice__ = __getslice__objectAtIndex_(self, i, j)
+ |  
+ |  __len__ lambda self
+ |  
+ |  __mul__ = nsarray_mul(self, other)
+ |      This tries to implement anNSArray * N
+ |      somewhat efficently (and definitely more
+ |      efficient that repeated appending).
+ |  
+ |  __radd__ = nsarray_radd(self, other)
+ |  
+ |  __reversed__ lambda self
+ |  
+ |  __rmul__ = nsarray_mul(self, other)
+ |      This tries to implement anNSArray * N
+ |      somewhat efficently (and definitely more
+ |      efficient that repeated appending).
+ |  
+ |  index = index_indexOfObject_inRange_(self, item, start=0, stop=<object object>)
+ |  
+ |  itervalues lambda self
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from NSArray:
+ |  
+ |  CAMLType
+ |  
+ |  CA_addValue_multipliedBy_
+ |  
+ |  CA_interpolateValue_byFraction_
+ |  
+ |  CA_interpolateValues___interpolator_
+ |  
+ |  CI_affineTransform
+ |  
+ |  CI_initWithAffineTransform_
+ |  
+ |  CI_initWithRect_
+ |  
+ |  CI_rect
+ |  
+ |  addObserver_forKeyPath_options_context_
+ |  
+ |  addObserver_toObjectsAtIndexes_forKeyPath_options_context_
+ |  
+ |  arrayAtIndex_BU_
+ |  
+ |  arrayByAddingObject_
+ |  
+ |  arrayByAddingObjectsFromArray_
+ |  
+ |  arrayByApplyingBlock_
+ |  
+ |  arrayByExcludingObjectsInArray_
+ |  
+ |  arrayByExcludingToObjectsInArray_
+ |  
+ |  boolAtIndex_BU_
+ |  
+ |  boolAtIndex_BU_defaultValue_
+ |  
+ |  cgFloatAtIndex_BU_
+ |  
+ |  cgFloatAtIndex_BU_defaultValue_
+ |  
+ |  coerceValue_forKey_
+ |  
+ |  componentsJoinedByString_
+ |  
+ |  containsObjectIdenticalTo_
+ |  
+ |  containsObjectIdenticalTo_inRange_
+ |  
+ |  containsObject_
+ |  
+ |  containsObject_inRange_
+ |  
+ |  countByEnumeratingWithState_objects_count_
+ |  
+ |  countForObject_
+ |  
+ |  countForObject_inRange_
+ |  
+ |  dataAtIndex_BU_
+ |  
+ |  descriptionWithLocale_indent_
+ |  
+ |  dictionaryAtIndex_BU_
+ |  
+ |  doubleAtIndex_BU_
+ |  
+ |  doubleAtIndex_BU_defaultValue_
+ |  
+ |  encodeWithCAMLWriter_
+ |  
+ |  enumerateObjectsAtIndexes_options_usingBlock_
+ |  
+ |  enumerateObjectsUsingBlock_
+ |  
+ |  enumerateObjectsWithOptions_usingBlock_
+ |  
+ |  firstObject
+ |  
+ |  firstObjectCommonWithArray_
+ |  
+ |  firstRange
+ |  
+ |  fourCharCodeAtIndex_BU_
+ |  
+ |  fourCharCodeAtIndex_BU_defaultValue_
+ |  
+ |  getObjects_
+ |  
+ |  getObjects_range_
+ |  
+ |  hash
+ |  
+ |  indexOfFirstRangeContainingOrFollowing_
+ |  
+ |  indexOfObjectAtIndexes_options_passingTest_
+ |  
+ |  indexOfObjectIdenticalTo_
+ |  
+ |  indexOfObjectIdenticalTo_inRange_
+ |  
+ |  indexOfObjectPassingTest_
+ |  
+ |  indexOfObjectPassingTest_inRange_
+ |  
+ |  indexOfObjectWithOptions_passingTest_
+ |  
+ |  indexOfObject_
+ |  
+ |  indexOfObject_inRange_
+ |  
+ |  indexOfObject_inSortedRange_options_usingComparator_
+ |  
+ |  indexesOfObjectIdenticalTo_
+ |  
+ |  indexesOfObjectIdenticalTo_inRange_
+ |  
+ |  indexesOfObject_
+ |  
+ |  indexesOfObject_inRange_
+ |  
+ |  indexesOfObjectsAtIndexes_options_passingTest_
+ |  
+ |  indexesOfObjectsPassingTest_
+ |  
+ |  indexesOfObjectsWithOptions_passingTest_
+ |  
+ |  initWithArray_
+ |  
+ |  initWithArray_range_
+ |  
+ |  initWithArray_range_copyItems_
+ |  
+ |  initWithObject_
+ |  
+ |  initWithOrderedSet_
+ |  
+ |  initWithOrderedSet_copyItems_
+ |  
+ |  initWithOrderedSet_range_
+ |  
+ |  initWithOrderedSet_range_copyItems_
+ |  
+ |  initWithSet_
+ |  
+ |  initWithSet_copyItems_
+ |  
+ |  insertValue_atIndex_inPropertyWithKey_
+ |  
+ |  integerAtIndex_BU_
+ |  
+ |  integerAtIndex_BU_defaultValue_
+ |  
+ |  isEqualToArray_
+ |  
+ |  isNSArray__
+ |  
+ |  lastRange
+ |  
+ |  maximumRange
+ |  
+ |  objectAtIndexedSubscript_
+ |  
+ |  objectEnumerator
+ |  
+ |  objectsAtIndexes_options_passingTest_
+ |  
+ |  objectsPassingTest_
+ |  
+ |  objectsWithOptions_passingTest_
+ |  
+ |  pathsMatchingExtensions_
+ |  
+ |  pointAtIndex_BU_
+ |  
+ |  pointAtIndex_BU_defaultValue_
+ |  
+ |  rangeAtIndex_
+ |  
+ |  rangesContainLocation_
+ |  
+ |  rectAtIndex_BU_
+ |  
+ |  rectAtIndex_BU_defaultValue_
+ |  
+ |  removeObserver_forKeyPath_
+ |  
+ |  removeObserver_forKeyPath_context_
+ |  
+ |  removeObserver_fromObjectsAtIndexes_forKeyPath_
+ |  
+ |  removeObserver_fromObjectsAtIndexes_forKeyPath_context_
+ |  
+ |  removeValueAtIndex_fromPropertyWithKey_
+ |  
+ |  replaceValueAtIndex_inPropertyWithKey_withValue_
+ |  
+ |  replacementObjectForPortCoder_
+ |  
+ |  reverseObjectEnumerator
+ |  
+ |  reversedArray
+ |  
+ |  sint64AtIndex_BU_
+ |  
+ |  sint64AtIndex_BU_defaultValue_
+ |  
+ |  sortedArrayFromRange_options_usingComparator_
+ |  
+ |  sortedArrayHint
+ |  
+ |  sortedArrayUsingComparator_
+ |  
+ |  sortedArrayUsingDescriptors_
+ |  
+ |  sortedArrayUsingFunction_context_
+ |  
+ |  sortedArrayUsingFunction_context_hint_
+ |  
+ |  sortedArrayUsingSelector_
+ |  
+ |  sortedArrayUsingSelector_hint_
+ |  
+ |  sortedArrayWithOptions_usingComparator_
+ |  
+ |  stringAtIndex_BU_
+ |  
+ |  stringAtIndex_BU_defaultValue_
+ |  
+ |  stringsByAppendingPathComponent_
+ |  
+ |  subarrayWithObjectsOfKind_
+ |  
+ |  takeValue_forKey_
+ |  
+ |  urlAtIndex_BU_
+ |  
+ |  valueAtIndex_inPropertyWithKey_
+ |  
+ |  valueForKeyPath_
+ |  
+ |  writeToFile_atomically_
+ |  
+ |  writeToURL_atomically_
+ |  
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from NSObject:
+ |  
+ |  __cmp__ = nsobject__cmp__(self, other)
+ |  
+ |  __eq__ = nsobject__eq__(self, other)
+ |  
+ |  __ge__ = nsobject__ge__(self, other)
+ |  
+ |  __gt__ = nsobject__gt__(self, other)
+ |  
+ |  __hash__ = nsobject_hash(self, _max=9223372036854775807, _const=18446744073709551616L)
+ |  
+ |  __le__ = nsobject__le__(self, other)
+ |  
+ |  __lt__ = nsobject__lt__(self, other)
+ |  
+ |  __ne__ = nsobject__ne__(self, other)
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from NSObject:
+ |  
+ |  CAMLTypeForKey_
+ |  
+ |  CA_copyRenderValue
+ |  
+ |  CA_distanceToValue_
+ |  
+ |  CA_prepareRenderValue
+ |  
+ |  accessibilityAddTemporaryChild_
+ |  
+ |  accessibilityAllowsOverriddenAttributesWhenIgnored
+ |  
+ |  accessibilityArrayAttributeCount_
+ |  
+ |  accessibilityArrayAttributeValues_index_maxCount_
+ |  
+ |  accessibilityAttributeValue_forParameter_
+ |  
+ |  accessibilityAttributedValueForStringAttributeAttributeForParameter_
+ |  
+ |  accessibilityDecodeOverriddenAttributes_
+ |  
+ |  accessibilityEncodeOverriddenAttributes_
+ |  
+ |  accessibilityIndexForChildUIElementAttributeForParameter_
+ |  
+ |  accessibilityIndexOfChild_
+ |  
+ |  accessibilityOverriddenAttributes
+ |  
+ |  accessibilityParameterizedAttributeNames
+ |  
+ |  accessibilityPresenterProcessIdentifier
+ |  
+ |  accessibilityRemoveTemporaryChild_
+ |  
+ |  accessibilitySetOverrideValue_forAttribute_
+ |  
+ |  accessibilitySetPresenterProcessIdentifier_
+ |  
+ |  accessibilityShouldSendNotification_
+ |  
+ |  accessibilityShouldUseUniqueId
+ |  
+ |  accessibilitySupportsNotifications
+ |  
+ |  accessibilitySupportsOverriddenAttributes
+ |  
+ |  accessibilityTemporaryChildren
+ |  
+ |  addObject_toBothSidesOfRelationshipWithKey_
+ |  
+ |  addObject_toPropertyWithKey_
+ |  
+ |  allPropertyKeys
+ |  
+ |  allowsWeakReference
+ |  
+ |  attributeKeys
+ |  
+ |  autoContentAccessingProxy
+ |  
+ |  autorelease
+ |  
+ |  awakeAfterUsingCoder_
+ |  
+ |  awakeFromNib
+ |  
+ |  bind_toObject_withKeyPath_options_
+ |  
+ |  classCode
+ |  
+ |  classDescription
+ |  
+ |  classDescriptionForDestinationKey_
+ |  
+ |  classForArchiver
+ |  
+ |  classForKeyedArchiver
+ |  
+ |  classForPortCoder
+ |  
+ |  className
+ |  
+ |  class__
+ |  
+ |  clearProperties
+ |  
+ |  coerceValueForScriptingProperties_
+ |  
+ |  conformsToProtocol_
+ |  
+ |  copy
+ |  
+ |  copyScriptingValue_forKey_withProperties_
+ |  
+ |  createKeyValueBindingForKey_typeMask_
+ |  
+ |  dictionaryWithValuesForKeys_
+ |  
+ |  didChangeValueForKey_
+ |  
+ |  didChangeValueForKey_withSetMutation_usingObjects_
+ |  
+ |  didChange_valuesAtIndexes_forKey_
+ |  
+ |  doesContain_
+ |  
+ |  doesNotRecognizeSelector_
+ |  
+ |  entityName
+ |  
+ |  exposedBindings
+ |  
+ |  finalize
+ |  
+ |  flushKeyBindings
+ |  
+ |  forwardInvocation_
+ |  
+ |  forwardingTargetForSelector_
+ |  
+ |  handleQueryWithUnboundKey_
+ |  
+ |  handleTakeValue_forUnboundKey_
+ |  
+ |  implementsSelector_
+ |  
+ |  infoForBinding_
+ |  
+ |  insertValue_inPropertyWithKey_
+ |  
+ |  inverseForRelationshipKey_
+ |  
+ |  isBlock
+ |  
+ |  isCaseInsensitiveLike_
+ |  
+ |  isEqualTo_
+ |  
+ |  isFault
+ |  
+ |  isGreaterThanOrEqualTo_
+ |  
+ |  isGreaterThan_
+ |  
+ |  isKindOfClass_
+ |  
+ |  isLessThanOrEqualTo_
+ |  
+ |  isLessThan_
+ |  
+ |  isLike_
+ |  
+ |  isMemberOfClass_
+ |  
+ |  isNSData__
+ |  
+ |  isNSDate__
+ |  
+ |  isNSDictionary__
+ |  
+ |  isNSNumber__
+ |  
+ |  isNSOrderedSet__
+ |  
+ |  isNSSet__
+ |  
+ |  isNSString__
+ |  
+ |  isNSTimeZone__
+ |  
+ |  isNSValue__
+ |  
+ |  isNotEqualTo_
+ |  
+ |  isProxy
+ |  
+ |  isToManyKey_
+ |  
+ |  keyValueBindingForKey_typeMask_
+ |  
+ |  methodDescriptionForSelector_
+ |  
+ |  methodForSelector_
+ |  
+ |  methodSignatureForSelector_
+ |  
+ |  mutableArrayValueForKeyPath_
+ |  
+ |  mutableArrayValueForKey_
+ |  
+ |  mutableCopy
+ |  
+ |  mutableOrderedSetValueForKeyPath_
+ |  
+ |  mutableOrderedSetValueForKey_
+ |  
+ |  mutableSetValueForKeyPath_
+ |  
+ |  mutableSetValueForKey_
+ |  
+ |  newScriptingObjectOfClass_forValueForKey_withContentsValue_properties_
+ |  
+ |  nextSlicePiece_
+ |  
+ |  objectSpecifier
+ |  
+ |  observationInfo
+ |  
+ |  observeValueForKeyPath_ofObject_change_context_
+ |  
+ |  optionDescriptionsForBinding_
+ |  
+ |  ownsDestinationObjectsForRelationshipKey_
+ |  
+ |  performSelectorInBackground_withObject_
+ |  
+ |  performSelectorOnMainThread_withObject_waitUntilDone_
+ |  
+ |  performSelectorOnMainThread_withObject_waitUntilDone_modes_
+ |  
+ |  performSelector_
+ |  
+ |  performSelector_object_afterDelay_
+ |  
+ |  performSelector_onThread_withObject_waitUntilDone_
+ |  
+ |  performSelector_onThread_withObject_waitUntilDone_modes_
+ |  
+ |  performSelector_withObject_
+ |  
+ |  performSelector_withObject_afterDelay_
+ |  
+ |  performSelector_withObject_afterDelay_inModes_
+ |  
+ |  performSelector_withObject_withObject_
+ |  
+ |  pyobjc_performSelector:onThread:withObject:
+ |  
+ |  pyobjc_performSelector:onThread:withObject:modes:
+ |  
+ |  pyobjc_performSelector:onThread:withObject:waitUntilDone:
+ |      A version of performSelector:onThread:withObject:waitUntilDone: that
+ |      will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop on the other thread).
+ |  
+ |  pyobjc_performSelector:onThread:withObject:waitUntilDone:modes:
+ |      A version of performSelector:onThread:withObject:waitUntilDone:modes:
+ |      that will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop on the other thread).
+ |  
+ |  pyobjc_performSelector:withObject:afterDelay:
+ |      A version of performSelector:withObject:afterDelay:
+ |      that will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop).
+ |  
+ |  pyobjc_performSelector:withObject:afterDelay:inModes:
+ |      A version of performSelector:withObject:afterDelay:inModes:
+ |      that will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop).
+ |  
+ |  pyobjc_performSelectorInBackground:withObject:
+ |      A version of performSelectorInBackground:withObject:
+ |      that will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop).
+ |  
+ |  pyobjc_performSelectorInBackground_withObject_
+ |  
+ |  pyobjc_performSelectorOnMainThread:withObject:
+ |  
+ |  pyobjc_performSelectorOnMainThread:withObject:modes:
+ |      Simular to performSelectorOnMainThread:withObject:waitUntilDone:modes:,
+ |      but:
+ |      
+ |      - always waits until done
+ |      - returns the return value of the called method
+ |      - if the called method raises an exception, this will raise the same
+ |         exception
+ |  
+ |  pyobjc_performSelectorOnMainThread:withObject:waitUntilDone:
+ |      A version of performSelectorOnMainThread:withObject:waitUntilDone:
+ |      that will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop in the main thread).
+ |  
+ |  pyobjc_performSelectorOnMainThread:withObject:waitUntilDone:modes:
+ |      A version of performSelectorOnMainThread:withObject:waitUntilDone:modes:
+ |      that will log exceptions in the called method (instead of aborting the
+ |      NSRunLoop in the main thread).
+ |  
+ |  pyobjc_performSelectorOnMainThread_withObject_
+ |  
+ |  pyobjc_performSelectorOnMainThread_withObject_modes_
+ |  
+ |  pyobjc_performSelectorOnMainThread_withObject_waitUntilDone_
+ |  
+ |  pyobjc_performSelectorOnMainThread_withObject_waitUntilDone_modes_
+ |  
+ |  pyobjc_performSelector_onThread_withObject_
+ |  
+ |  pyobjc_performSelector_onThread_withObject_modes_
+ |  
+ |  pyobjc_performSelector_onThread_withObject_waitUntilDone_
+ |  
+ |  pyobjc_performSelector_onThread_withObject_waitUntilDone_modes_
+ |  
+ |  pyobjc_performSelector_withObject_afterDelay_
+ |  
+ |  pyobjc_performSelector_withObject_afterDelay_inModes_
+ |  
+ |  release
+ |  
+ |  removeObject_fromBothSidesOfRelationshipWithKey_
+ |  
+ |  removeObject_fromPropertyWithKey_
+ |  
+ |  replacementObjectForArchiver_
+ |  
+ |  replacementObjectForCoder_
+ |  
+ |  replacementObjectForKeyedArchiver_
+ |  
+ |  respondsToSelector_
+ |  
+ |  retain
+ |  
+ |  retainCount
+ |  
+ |  retainWeakReference
+ |  
+ |  scriptingProperties
+ |  
+ |  scriptingValueForSpecifier_
+ |  
+ |  self
+ |  
+ |  setNilValueForKey_
+ |  
+ |  setObservationInfo_
+ |  
+ |  setScriptingProperties_
+ |  
+ |  setUserInterfaceItemIdentifier_
+ |  
+ |  setValue_forKeyPath_
+ |  
+ |  setValue_forUndefinedKey_
+ |  
+ |  setValuesForKeysWithDictionary_
+ |  
+ |  storedValueForKey_
+ |  
+ |  superclass
+ |  
+ |  takeStoredValue_forKey_
+ |  
+ |  takeStoredValuesFromDictionary_
+ |  
+ |  takeValue_forKeyPath_
+ |  
+ |  takeValuesFromDictionary_
+ |  
+ |  toManyRelationshipKeys
+ |  
+ |  toOneRelationshipKeys
+ |  
+ |  unableToSetNilForKey_
+ |  
+ |  unbind_
+ |  
+ |  userInterfaceItemIdentifier
+ |  
+ |  validateTakeValue_forKeyPath_
+ |  
+ |  validateValue_forKeyPath_error_
+ |  
+ |  validateValue_forKey_
+ |  
+ |  validateValue_forKey_error_
+ |  
+ |  valueClassForBinding_
+ |  
+ |  valueForUndefinedKey_
+ |  
+ |  valueWithName_inPropertyWithKey_
+ |  
+ |  valueWithUniqueID_inPropertyWithKey_
+ |  
+ |  valuesForKeys_
+ |  
+ |  willChangeValueForKey_
+ |  
+ |  willChangeValueForKey_withSetMutation_usingObjects_
+ |  
+ |  willChange_valuesAtIndexes_forKey_
+ |  
+ |  zone
+ |  
+ |  ----------------------------------------------------------------------
+ |  Methods inherited from __builtin__.objc.objc_class:
+ |  
+ |  __c_void_p__(...)
+ |      Return a ctypes.c_void_p representing this object
+ |  
+ |  __cobject__(...)
+ |      Return a CObject representing this object
+ |  
+ |  __delattr__(...)
+ |      x.__delattr__('name') <==> del x.name
+ |  
+ |  __getattribute__(...)
+ |      x.__getattribute__('name') <==> x.name
+ |  
+ |  __reduce__(...)
+ |      Used for pickling
+ |  
+ |  __repr__(...)
+ |      x.__repr__() <==> repr(x)
+ |  
+ |  __setattr__(...)
+ |      x.__setattr__('name', value) <==> x.name = value
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors inherited from __builtin__.objc.objc_class:
+ |  
+ |  __block_signature__
+ |      Call signature for a block, or None
+ |  
+ |  pyobjc_ISA
+ |      Return the current ISA of the object
+ |  
+ |  pyobjc_instanceMethods
+ |      The attributes of this field are the instance methods of this object. This
+ |      can be used to force access to an instance method.
+
+None
+
+Process finished with exit code 0
