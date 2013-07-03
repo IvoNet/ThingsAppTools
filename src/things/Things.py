@@ -1,5 +1,6 @@
 __doc__ = "Python module wrapping the Things API in convenient Python classes."
 __author__ = "Ivo Woltring"
+__version__ = "0.1"
 __copyright__ = "Copyright (c) 2013 Ivo Woltring"
 __license__ = """
 Licensed under the Apache License, Version 2.0 (the "License");

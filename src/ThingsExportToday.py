@@ -1,4 +1,7 @@
-__doc__ = "Implementation of a Singleton"
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# -*- Python -*-
+__doc__ = "Exports Today todos to an xml file"
 __author__ = "Ivo Woltring"
 __copyright__ = "Copyright (c) 2013 Ivo Woltring"
 __license__ = """
@@ -15,18 +18,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
+import things.ThingsXml as ThingsXml
 
-class Singleton(object):
-    """ A Pythonic Singleton
-    Just have your class inherit from Singleton,
-    and don't override __new__. Then, all calls to that class
-    (normally creations of new instances) return the same instance.
-    (The instance is created once, on the first such call to each given
-    subclass of Singleton during each run of your program.)
-    """
-
-    # noinspection PyArgumentList
-    def __new__(cls, *args, **kwargs):
-        if '_inst' not in vars(cls):
-            cls._inst = object.__new__(cls, *args, **kwargs)
-        return cls._inst
+if __name__ == "__main__":
+    output = ThingsXml.todayToXml()
+    print output
+    fo = open("../tmp/ThingsToday.xml", "w")
+    fo.write(output)
+    fo.close()

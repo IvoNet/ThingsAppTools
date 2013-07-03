@@ -3,7 +3,7 @@
 # -*- Python -*-
 
 __author__ = "Ivo Woltring"
-__copyright__ = "Copyright (c) 2005 Ivo Woltring"
+__copyright__ = "Copyright (c) 2013 Ivo Woltring"
 __license__ = """
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
