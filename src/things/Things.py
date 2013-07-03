@@ -157,6 +157,12 @@ class ThingsToDos(object):
     def __iter__(self):
         return self.todos.__iter__()
 
+    def hasOpen(self):
+        for todo in self.todos:
+            if todo.is_open():
+                return True
+        return False
+
 
 class ThingsProject(object):
     """

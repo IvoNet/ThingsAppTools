@@ -14,10 +14,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
-
 import Null
 import xmlwitch
 from Things import ThingsToDos, ThingsArea, ThingsTags, ThingsProject, ThingsApp
+
+STATUS_CLOSED = "CLOSED"
+STATUS_OPEN = "OPEN"
 
 
 def Xml():
@@ -29,16 +31,16 @@ def Xml():
     return xmlwitch.Builder(version='1.0', encoding='utf-8', indent=' ' * 4)
 
 
-# def printTagIds(thingsTags, xml=Xml()):
-#     if not isinstance(thingsTags, ThingsTags):
-#         raise TypeError("Input parameter should be a ThingsTags but is a " + str(type(thingsTags)))
-#     if len(thingsTags) <= 0:
-#         return xml
-#     with xml.tags():
-#         for tag in thingsTags:
-#             print "Processing tag :", tag.id()
-#             xml.id(tag.id())
-#     return xml
+def __printTagsIds(thingsTags, xml=Xml()):
+    if not isinstance(thingsTags, ThingsTags):
+        raise TypeError("Input parameter should be a ThingsTags but is a " + str(type(thingsTags)))
+    if len(thingsTags) <= 0:
+        return xml
+    with xml.tagIds():
+        for tag in thingsTags:
+            print "Processing tag :", tag.name()
+            xml.id(tag.id())
+    return xml
 
 
 def __printTags(thingsTags, xml=Xml()):
@@ -55,31 +57,45 @@ def __printTags(thingsTags, xml=Xml()):
     return xml
 
 
-def __printArea(thingsArea, xml=Xml()):
+def __printAreaId(thingsArea, xml=Xml()):
     if thingsArea is Null:
         return xml
     if not isinstance(thingsArea, ThingsArea):
         raise TypeError("Input parameter should be a ThingsArea but is a " + str(type(thingsArea)))
-    with xml.area():
-        xml.id(thingsArea.id())
-        xml.name(thingsArea.name())
-        xml.suspended(str(thingsArea.suspended()))
+    xml.areaId(thingsArea.id())
     return xml
 
 
-def __printProject(thingsProject, xml=Xml()):
+def __printProjectId(thingsProject, xml=Xml()):
     if thingsProject is Null:
         return xml
     if not isinstance(thingsProject, ThingsProject):
         raise TypeError("Input parameter should be a ThingsProject but is a " + str(type(thingsProject)))
-    with xml.project():
-        xml.id(thingsProject.id())
-        xml.name(thingsProject.name())
-        xml.active(str(thingsProject.is_active()))
+    xml.projectId(thingsProject.id())
     return xml
 
 
-def __printToDos(thingsToDos, xml=Xml()):
+def __printProject(thingsProject, openOnly=True, xml=Xml()):
+    if thingsProject is Null:
+        return xml
+    if not isinstance(thingsProject, ThingsProject):
+        raise TypeError("Input parameter should be a ThingsProject but is a " + str(type(thingsProject)))
+    with xml.project(title=thingsProject.name()):
+        xml.id(thingsProject.id())
+        xml.name(thingsProject.name())
+        if len(thingsProject.notes()) > 0:
+            xml.notes(thingsProject.notes())
+        if thingsProject.is_active():
+            xml.status(STATUS_OPEN)
+        else:
+            xml.status(STATUS_CLOSED)
+        __printTags(thingsProject.tags(), xml)
+        __printToDos(thingsProject.toDos(), openOnly, xml)
+
+    return xml
+
+
+def __printToDos(thingsToDos, openOnly=True, xml=Xml()):
     """
     Print a ThingsToDos item as Xml.
 
@@ -90,9 +106,14 @@ def __printToDos(thingsToDos, xml=Xml()):
     """
     if not isinstance(thingsToDos, ThingsToDos):
         raise TypeError("Input parameter should be a ThingsToDos")
+    if openOnly and not thingsToDos.hasOpen():
+        return xml
     with xml.todos():
         for todo in thingsToDos:
             print "Processing todo:", todo.name()
+            if openOnly:
+                if not todo.is_open():
+                    continue
             with xml.todo():
                 xml.id(todo.id())
                 xml.name(todo.name())
@@ -100,9 +121,9 @@ def __printToDos(thingsToDos, xml=Xml()):
                 if len(todo_notes) > 0:
                     xml.notes(todo_notes)
                 xml.creationDate(str(todo.creationDate()))
-                __printArea(todo.area(), xml)
-                __printProject(todo.project(), xml)
-                __printTags(todo.tags(), xml)
+                __printAreaId(todo.area(), xml)
+                __printProjectId(todo.project(), xml)
+                __printTagsIds(todo.tags(), xml)
                 if todo.is_open():
                     xml.status("OPEN")
                 elif todo.is_closed():
@@ -132,54 +153,44 @@ def __printToDos(thingsToDos, xml=Xml()):
 #             printToDos(thingsList.toDos(), xml)
 
 
-def __printToday(thingsToDos, xml=Xml()):
+def __printToday(thingsToDos, openOnly=True, xml=Xml()):
     with xml.today():
-        __printToDos(thingsToDos, xml)
+        __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
-def __printInbox(thingsToDos, xml=Xml()):
+def __printInbox(thingsToDos, openOnly=True, xml=Xml()):
     with xml.inbox():
-        __printToDos(thingsToDos, xml)
+        __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
-def __printNext(thingsToDos, xml=Xml()):
+def __printNext(thingsToDos, openOnly=True, xml=Xml()):
     with xml.next():
-        __printToDos(thingsToDos, xml)
+        __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
-def __printScheduled(thingsToDos, xml=Xml()):
+def __printScheduled(thingsToDos, openOnly=True, xml=Xml()):
     with xml.scheduled():
-        __printToDos(thingsToDos, xml)
+        __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
-def __printSomeday(thingsToDos, xml=Xml()):
+def __printSomeday(thingsToDos, openOnly=True, xml=Xml()):
     with xml.someday():
-        __printToDos(thingsToDos, xml)
+        __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
-def __printProjects(thingsProjects, xml=Xml()):
+def __printProjects(thingsProjects, openOnly=True, xml=Xml()):
     with xml.projects():
         for project in thingsProjects:
-            with xml.project(title=project.name()):
-                xml.id(project.id())
-                xml.name(project.name())
-                if len(project.notes()) > 0:
-                    xml.notes(project.notes())
-                if project.is_active():
-                    xml.status("OPEN")
-                else:
-                    xml.status("CLOSED")
-                __printTags(project.tags(), xml)
-                __printToDos(project.toDos(), xml)
+            __printProject(project, openOnly, xml)
     return xml
 
 
-def __printAreas(thingsAreas, xml=Xml()):
+def __printAreas(thingsAreas, openOnly=True, xml=Xml()):
     with xml.areas():
         for area in thingsAreas:
             print "Processing area:", area.name()
@@ -188,22 +199,22 @@ def __printAreas(thingsAreas, xml=Xml()):
             with xml.area(title=area.name()):
                 xml.id(area.id())
                 xml.name(area.name())
-                __printToDos(area.toDos(), xml)
+                __printToDos(area.toDos(), openOnly, xml)
     return xml
 
 
-def activeListsToXml():
+def activeListsToXml(statusOpenOnly=True):
     """Generates an XML representation of all active lists in Things"""
     Things = ThingsApp()
     xml = Xml()
     with xml.things(xmlns='http://things.ivonet.nl'):
-        __printToday(Things["Today"], xml)
-        __printInbox(Things["Inbox"], xml)
-        __printNext(Things["Next"], xml)
-        __printScheduled(Things["Scheduled"], xml)
-        __printSomeday(Things["Someday"], xml)
-        __printProjects(Things.projects(), xml)
-        __printAreas(Things.areas(), xml)
+        __printInbox(Things["Inbox"], statusOpenOnly, xml)
+        __printToday(Things["Today"], statusOpenOnly, xml)
+        __printNext(Things["Next"], statusOpenOnly, xml)
+        __printScheduled(Things["Scheduled"], statusOpenOnly, xml)
+        __printSomeday(Things["Someday"], statusOpenOnly, xml)
+        __printProjects(Things.projects(), statusOpenOnly, xml)
+        __printAreas(Things.areas(), statusOpenOnly, xml)
         __printTags(Things.tags(), xml)
     return str(xml)
 
@@ -217,21 +228,21 @@ def tagsToXml():
     return str(xml)
 
 
-def inboxToXml():
+def inboxToXml(statusOpenOnly=True):
     """Generates an XML representation of the Things "Inbox" list"""
     Things = ThingsApp()
     xml = Xml()
     with xml.things(xmlns='http://things.ivonet.nl'):
-        __printInbox(Things["Inbox"], xml)
+        __printInbox(Things["Inbox"], statusOpenOnly, xml)
     return str(xml)
 
 
-def todayToXml():
+def todayToXml(statusOpenOnly=True):
     """Generates an XML representation of the Things "Today" list"""
     Things = ThingsApp()
     xml = Xml()
     with xml.things(xmlns='http://things.ivonet.nl'):
-        __printToday(Things["Today"], xml)
+        __printToday(Things["Today"], statusOpenOnly, xml)
     return str(xml)
 
 

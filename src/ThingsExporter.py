@@ -21,7 +21,7 @@ limitations under the License.
 import things.ThingsXml as ThingsXml
 
 if __name__ == "__main__":
-    output = ThingsXml.activeListsToXml()
+    output = ThingsXml.activeListsToXml(True)
     print output
     fo = open("../tmp/ThingsExport.xml", "w")
     fo.write(output)
