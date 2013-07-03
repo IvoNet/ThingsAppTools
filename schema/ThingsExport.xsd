@@ -79,7 +79,7 @@
                 <xs:element ref="ivo:id"/>
                 <xs:element ref="ivo:name"/>
                 <xs:element ref="ivo:status"/>
-                <xs:element ref="ivo:todos"/>
+                <xs:element ref="ivo:todos" minOccurs="0"/>
             </xs:sequence>
             <xs:attribute name="title" use="required"/>
         </xs:complexType>
@@ -96,7 +96,7 @@
             <xs:sequence>
                 <xs:element ref="ivo:id"/>
                 <xs:element ref="ivo:name"/>
-                <xs:element ref="ivo:todos"/>
+                <xs:element ref="ivo:todos" minOccurs="0"/>
             </xs:sequence>
             <xs:attribute name="title" use="required"/>
         </xs:complexType>
