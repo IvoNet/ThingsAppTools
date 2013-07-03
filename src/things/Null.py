@@ -2,7 +2,7 @@ __author__ = "Ivo Woltring"
 __version__ = "$version: 00.01$"
 __revised__ = "$revised: 2005-10-23 22:28:18$"
 __copyright__ = "Copyright (c) 2005 Ivo Woltring"
-__license__ = "Python"
+__license__ = "Apache 2"
 
 __doc__ = """
 Recipe 6.17. Implementing the Null Object Design Pattern

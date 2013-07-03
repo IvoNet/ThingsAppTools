@@ -11,6 +11,13 @@ So I can add them to my website periodically and make my things available throug
     sudo pip install pyobjc
 
 
+# User Stories #
+
+* As a user I WANT TO be able to export Things.app lists to Xml IN ORDER TO have a usable backup
+* As a user I WANT TO be able to import specific Xml to Things.app IN ORDER TO update Things based on external data
+* As a user I WANT TO have a contract defined on the Xml IN ORDER TO be use this contract elsewhere (webservice)
+* As a hacker I WANT TO write a Things.app AppleScript API wrapper in Python JUST BECAUSE I CAN :-)
+
 
 # Copyright #
 

@@ -1,14 +1,15 @@
 try:
     from Foundation import *
     from ScriptingBridge import *
-except:
+except ImportError:
     print "Please install the pyobjc package to make this script work."
     print "Working on a Mac and having Things installed is also a must :-)."
+    sys.exit(1)
 
 import Null
 
 STATUS_OPEN = 1952737647
-STATUS_CANCELED = 1952736108
+STATUS_CANCELLED = 1952736108
 STATUS_CLOSED = 1952736109
 UTF_8 = "utf-8"
 
@@ -28,10 +29,13 @@ class ThingsToDo(object):
         return self.todo.id()
 
     def name(self):
+        """
+        :return: the name of the todo
+        """
         return self.todo.name()
 
     def notes(self):
-        return self.todo.notes().strip()
+        return self.todo.notes().encode(UTF_8).strip()
 
     def tags(self):
         return ThingsTags(self.todo.tags())
@@ -50,23 +54,18 @@ class ThingsToDo(object):
         return self.todo.status() == STATUS_OPEN
 
     def is_canceled(self):
-        return self.todo.status() == STATUS_CANCELED
+        return self.todo.status() == STATUS_CANCELLED
 
     def is_closed(self):
         return self.todo.status() == STATUS_CLOSED
-
-    def creationDate(self):
-        # return time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
-        # tm = time.strptime(self.todo.creationDate().description(), "%Y-%m-%d %H:%M:%S +0000")
-        # return datetime.datetime(tm.tm_year, tm.tm_mon, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, tzinfo=MyTzinfo())
-        # return datetime.datetime(time.mktime(tm))
-        #2013-06-16 18:01:17 +0000
-        return self.todo.creationDate()
 
     def __check_date__(self, date):
         if date is None:
             return Null
         return date
+
+    def creationDate(self):
+        return self.todo.creationDate()
 
     def activationDate(self):
         return self.__check_date__(self.todo.activationDate())
@@ -123,6 +122,15 @@ class ThingsProject(object):
     def name(self):
         return self.project.name().encode(UTF_8)
 
+    def tags(self):
+        return ThingsTags(self.project.tags())
+
+    def notes(self):
+        return self.project.notes().encode(UTF_8).strip()
+
+    def toDos(self):
+        return ThingsToDos(self.project.toDos())
+
     def is_active(self):
         return self.project.status() == STATUS_OPEN
 
@@ -178,8 +186,14 @@ class ThingsArea(object):
     def id(self):
         return self.area.id().encode(UTF_8)
 
+    def name(self):
+        return self.area.name().encode(UTF_8)
+
     def suspended(self):
         return self.area.suspended()
+
+    def toDos(self):
+        return ThingsToDos(self.area.toDos())
 
 
 class ThingsAreas(object):
@@ -187,7 +201,6 @@ class ThingsAreas(object):
         self.areas = []
         if len(items) > 0:
             if type(items[0]) is ThingsArea:
-                print "!!!"
                 self.areas = items
             else:
                 [self.areas.append(ThingsArea(x)) for x in items]
@@ -210,21 +223,6 @@ class ThingsAreas(object):
         return ThingsAreas(ret)
 
 
-class ThingsLists(object):
-    """
-        Wraps the lists of Things
-    """
-
-    def __init__(self, items):
-        self.lists = items
-
-    def __iter__(self):
-        return self.lists.__iter__()
-
-    def byId(self, identifier):
-        return self.lists.objectWithID_(identifier)
-
-
 class ThingsTag(object):
     def __init__(self, item):
         self.tag = item
@@ -242,7 +240,7 @@ class ThingsTag(object):
         return self.tag.id().encode(UTF_8)
 
     def parentTag(self):
-        return self.tag.parentTag().encode(UTF_8)
+        return self.tag.parentTag()
 
     def toDos(self):
         return ThingsToDos(self.tag.toDos())
@@ -263,6 +261,9 @@ class ThingsTags(object):
         ret += "}"
         return ret
 
+    def __len__(self):
+        return len(self.tags)
+
     def __repr__(self):
         return self.__str__()
 
@@ -274,6 +275,60 @@ class ThingsTags(object):
             if tag.name is item.encode(UTF_8):
                 return tag
         return Null
+
+
+class ThingsList(object):
+    def __init__(self, item):
+        self.list = item
+
+    def __str__(self):
+        return self.list.name().encode(UTF_8)
+
+    def __repr__(self):
+        return self.__str__()
+
+    def id(self):
+        return self.list.id().encode(UTF_8)
+
+    def name(self):
+        return self.list.name().encode(UTF_8)
+
+    def toDos(self):
+        return ThingsToDos(self.list.toDos())
+
+
+class ThingsLists(object):
+    """
+        Wraps the lists of Things
+    """
+
+    def __init__(self, items):
+        self.lists = []
+        if len(items) > 0:
+            if type(items[0]) is ThingsList:
+                self.lists = items
+            else:
+                [self.lists.append(ThingsList(x)) for x in items]
+
+
+    def __iter__(self):
+        return self.lists.__iter__()
+
+    def __str__(self):
+        ret = "Lists = {"
+        ret += ", ".join([str(x) for x in self.lists])
+        ret += "}"
+        return ret
+
+    def __repr__(self):
+        return self.__str__()
+
+
+    def byId(self, identifier):
+        return self.lists.objectWithID_(identifier)
+
+    def byName(self, identifier):
+        return self.lists.objectWithName_(identifier)
 
 
 class ThingsApp(object):
