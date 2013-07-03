@@ -1,9 +1,22 @@
-__author__ = "Ivo Woltring"
-__version__ = "$version: 00.01$"
-__revised__ = "$revised: 2005-10-23 22:28:18$"
-__copyright__ = "Copyright (c) 2005 Ivo Woltring"
-__license__ = "Apache 2"
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# -*- Python -*-
 
+__author__ = "Ivo Woltring"
+__copyright__ = "Copyright (c) 2013 Ivo Woltring"
+__license__ = """
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
 __doc__ = """
 Recipe 6.17. Implementing the Null Object Design Pattern
 Credit: Dinu C. Gherman, Holger Krekel
@@ -131,7 +144,7 @@ readability.
 Null objects can act as placeholders for objects whose behavior is not yet
 implemented.
 
-Null objects can be used polymorphically with instances of just about any other
+Null objects can be used polymorphic with instances of just about any other
 class (perhaps needing suitable subclassing for special methods, as previously
 mentioned).
 
@@ -167,6 +180,7 @@ can be semantically crucial.
 from Singleton import Singleton
 
 
+# noinspection PyUnusedLocal
 class _Null(Singleton):
     """ Null objects always and reliably "do nothing." """
 
@@ -213,10 +227,13 @@ class _Null(Singleton):
 if not __name__ == "__main__":
     import sys
 
-    sys.modules[__name__] = _Null() #Import the instantion in stead of the module
+    #Import the instantiation in stead of the module
+    sys.modules[__name__] = _Null()
 else:
     Null = _Null()
     Test = Null
     print Test['a']
-    for x in range(10): print Test[x]
-    Test.helloworld(1) # No error even though the method does not exist
+    for x in range(10):
+        print Test[x]
+    Test.helloworld(1)
+    # No error even though the method does not exist
