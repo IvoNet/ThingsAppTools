@@ -22,7 +22,7 @@ This projec will incorporate a bundle of different tools, languages and techniqu
 For the python tools we need:
 
 * Python 2.7.x
-* the PyObjc package (**sudo pip install pyobjc**)
+* the PyObjc package (sudo pip install pyobjc)
 * Things.app
 * A Mac where it all runs on
 
@@ -69,3 +69,20 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+
+# Help wanted #
+
+If there is someone also interested in working on this project by for example making
+the python code better (unit testing?!) or by providing me with a great html/css/js look and
+feel for the GUI please feel free to fork this project and start participating!
+Or contact me if you have proven to be an active committer.
+
+
+If the guys from culterdcode are interested in my work and ideas please contact me.
+I would love to spar with you guys. As I'm an avid user of your product but I'm missing stuff!
+
+
+# Contact #
+
+I can be contacted here: http://www.ivonet.nl/home/contact
