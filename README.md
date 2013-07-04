@@ -19,11 +19,11 @@ For the python tools we need:
 * Python 2.7.x
 * the PyObjc package (see install command below)
 * Things.app
-* A Mac where it all runs on :-)
+* A Mac where it all runs on
 
 
 
-    sudo pip install pyobjc
+     sudo pip install pyobjc
 
 
 For the java applications you may need:
