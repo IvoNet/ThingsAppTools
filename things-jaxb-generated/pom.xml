@@ -38,7 +38,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:IvoNet/ThingsAppTools.git</developerConnection>
         <connection>scm:git:git@github.com:IvoNet/ThingsAppTools.git</connection>
-        <url>https://github.com/IvoNet/ThingsAppTools.git§</url>
+        <url>https://github.com/IvoNet/ThingsAppTools.git</url>
     </scm>
 
     <!--<distributionManagement>-->
