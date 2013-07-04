@@ -22,14 +22,9 @@ This projec will incorporate a bundle of different tools, languages and techniqu
 For the python tools we need:
 
 * Python 2.7.x
-* the PyObjc package (see install command below)
+* the PyObjc package (**sudo pip install pyobjc**)
 * Things.app
 * A Mac where it all runs on
-
-
-
-     sudo pip install pyobjc
-
 
 For the java applications you may need:
 
