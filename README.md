@@ -1,10 +1,15 @@
-# ThingsExporter #
+# ThingsAppTools #
 
-This project is a work in progress for exporting ToDos from the Things.app (http://culturedcode.com/things/)
-to an xml representation of those todos.
-So I can add them to my website periodically and make my things available through the web
+This project is created for making tools go get ToDos to/from the Things.app (http://culturedcode.com/things/)
+
+My Aim is to learn and to do somehting usefull with my trials. I'm a very happy user of the Things.app on my mac and
+iPhone, but at my workplace I work on a windows machine and I want to be able to have my todo's available there too.
+This project might just make this possible.
+
+See my userstories below for more information...
 
 This projec will incorporate a bundle of different tools, languages and techniques:
+
 * Python for communication with the Things.app
 * Applescript (maybe)
 * Java EE 6/7 for exposing Things to the web
