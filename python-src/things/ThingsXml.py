@@ -95,6 +95,33 @@ def __printProject(thingsProject, openOnly=True, xml=Xml()):
     return xml
 
 
+def __printTodo(thingsToDo, xml=Xml()):
+    xml.id(thingsToDo.id())
+    xml.name(thingsToDo.name())
+    todo_notes = thingsToDo.notes()
+    if len(todo_notes) > 0:
+        xml.notes(todo_notes)
+    xml.creationDate(str(thingsToDo.creationDate()))
+    __printAreaId(thingsToDo.area(), xml)
+    __printProjectId(thingsToDo.project(), xml)
+    __printTagsIds(thingsToDo.tags(), xml)
+    if thingsToDo.is_open():
+        xml.status("OPEN")
+    elif thingsToDo.is_closed():
+        xml.status("CLOSED")
+    else:
+        xml.status("CANCELLED")
+    if not thingsToDo.activationDate() is Null:
+        xml.activationDate(str(thingsToDo.activationDate()))
+    if not thingsToDo.completionDate() is Null:
+        xml.completionDate(str(thingsToDo.completionDate()))
+    if not thingsToDo.dueDate() is Null:
+        xml.dueDate(str(thingsToDo.dueDate()))
+    if not thingsToDo.cancellationDate() is Null:
+        xml.cancellationDate(str(thingsToDo.cancellationDate()))
+    return xml
+
+
 def __printToDos(thingsToDos, openOnly=True, xml=Xml()):
     """
     Print a ThingsToDos item as Xml.
@@ -115,29 +142,7 @@ def __printToDos(thingsToDos, openOnly=True, xml=Xml()):
                 if not todo.is_open():
                     continue
             with xml.todo():
-                xml.id(todo.id())
-                xml.name(todo.name())
-                todo_notes = todo.notes()
-                if len(todo_notes) > 0:
-                    xml.notes(todo_notes)
-                xml.creationDate(str(todo.creationDate()))
-                __printAreaId(todo.area(), xml)
-                __printProjectId(todo.project(), xml)
-                __printTagsIds(todo.tags(), xml)
-                if todo.is_open():
-                    xml.status("OPEN")
-                elif todo.is_closed():
-                    xml.status("CLOSED")
-                else:
-                    xml.status("CANCELLED")
-                if not todo.activationDate() is Null:
-                    xml.activationDate(str(todo.activationDate()))
-                if not todo.completionDate() is Null:
-                    xml.completionDate(str(todo.completionDate()))
-                if not todo.dueDate() is Null:
-                    xml.dueDate(str(todo.dueDate()))
-                if not todo.cancellationDate() is Null:
-                    xml.cancellationDate(str(todo.cancellationDate()))
+                __printTodo(todo, xml)
     return xml
 
 
@@ -154,36 +159,48 @@ def __printToDos(thingsToDos, openOnly=True, xml=Xml()):
 
 
 def __printToday(thingsToDos, openOnly=True, xml=Xml()):
+    if openOnly and not thingsToDos.hasOpen():
+        return xml
     with xml.today():
         __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
 def __printInbox(thingsToDos, openOnly=True, xml=Xml()):
+    if openOnly and not thingsToDos.hasOpen():
+        return xml
     with xml.inbox():
         __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
 def __printNext(thingsToDos, openOnly=True, xml=Xml()):
+    if openOnly and not thingsToDos.hasOpen():
+        return xml
     with xml.next():
         __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
 def __printScheduled(thingsToDos, openOnly=True, xml=Xml()):
+    if openOnly and not thingsToDos.hasOpen():
+        return xml
     with xml.scheduled():
         __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
 def __printSomeday(thingsToDos, openOnly=True, xml=Xml()):
+    if openOnly and not thingsToDos.hasOpen():
+        return xml
     with xml.someday():
         __printToDos(thingsToDos, openOnly, xml)
     return xml
 
 
 def __printProjects(thingsProjects, openOnly=True, xml=Xml()):
+    if openOnly and not thingsProjects.has_active():
+        return xml
     with xml.projects():
         for project in thingsProjects:
             __printProject(project, openOnly, xml)
@@ -191,6 +208,8 @@ def __printProjects(thingsProjects, openOnly=True, xml=Xml()):
 
 
 def __printAreas(thingsAreas, openOnly=True, xml=Xml()):
+    if openOnly and not thingsAreas.has_active():
+        return xml
     with xml.areas():
         for area in thingsAreas:
             print "Processing area:", area.name()

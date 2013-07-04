@@ -20,21 +20,21 @@
     <xs:element name="things">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="ivo:inbox"/>
-                <xs:element ref="ivo:today"/>
-                <xs:element ref="ivo:next"/>
-                <xs:element ref="ivo:scheduled"/>
-                <xs:element ref="ivo:someday"/>
-                <xs:element ref="ivo:projects"/>
-                <xs:element ref="ivo:areas"/>
-                <xs:element ref="ivo:tags"/>
+                <xs:element ref="ivo:inbox" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:today" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:next" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:scheduled" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:someday" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:projects" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:areas" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="ivo:tags" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
     <xs:element name="inbox">
         <xs:complexType>
             <xs:sequence>
-                <xs:element ref="ivo:todos"/>
+                <xs:element ref="ivo:todos" minOccurs="0"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

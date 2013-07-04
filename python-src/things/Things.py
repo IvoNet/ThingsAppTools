@@ -246,10 +246,16 @@ class ThingsProjects(object):
     def __repr__(self):
         return self.__str__()
 
+    def __len__(self):
+        return len(self.projects)
+
     def __active_projects__(self):
         ret = []
         [ret.append(x) for x in self.projects if x.is_active()]
         return ThingsProjects(ret)
+
+    def has_active(self):
+        return len(self.__active_projects__()) > 0
 
 
 class ThingsArea(object):
@@ -313,10 +319,16 @@ class ThingsAreas(object):
     def __iter__(self):
         return self.areas.__iter__()
 
+    def __len__(self):
+        return len(self.areas)
+
     def __active_areas__(self):
         ret = []
         [ret.append(x) for x in self.areas if not x.suspended()]
         return ThingsAreas(ret)
+
+    def has_active(self):
+        return len(self.__active_areas__()) > 0
 
 
 class ThingsTag(object):
