@@ -39,6 +39,22 @@ function CtrlThings($scope, $http) {
 
     $scope.toggleDebug = function () {
         $scope.debug = !$scope.debug;
-    }
+    };
+
+//    $scope.tagById = function (ids) {
+//        tags = $scope.things.tags.tag;
+//        mytags = "";
+//        for (x = 0; x < ids.length; x++) {
+//            id = ids[x];
+//            for (i = 0; i < tags.length; i++) {
+//                tag = tags[i];
+//                alert(tag.id + " " + id);
+//                if (tag.id == id) {
+//                    mytags = mytags + " " + tag.name;
+//                }
+//            }
+//        }
+//        return mytags;
+//    }
 
 }

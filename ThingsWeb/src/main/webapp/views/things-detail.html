@@ -42,7 +42,7 @@
 </div>
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="span2">
+        <div class="span3">
             <!--Sidebar content-->
             <div class="well sidebar-nav">
                 <ul class="nav nav-list">
@@ -62,7 +62,7 @@
                 </ul>
             </div>
         </div>
-        <div class="span10">
+        <div class="span9">
             <div class="hero-unit">
                 <table class="table table-hover table-striped table-bordered table-condensed">
                     <thead>
@@ -80,13 +80,9 @@
                             </label>
                         </td>
                         <td>
-                            <div class="span8">{{ todo.name }}
+                            <div class="span10">{{ todo.name }}
                                 <pre ng-model="debug" ng-show="debug">{{todo | json}}</pre>
                             </div>
-                            <div class="span2">
-                                <div ng-repeat="id in todo.tagIds.id">{{ id }}</div>
-                            </div>
-
                         </td>
                     </tr>
                     </tbody>
@@ -95,3 +91,4 @@
         </div>
     </div>
 </div>
+<pre ng-model="debug" ng-show="debug">{{things | json}}</pre>

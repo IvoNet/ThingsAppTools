@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2013 by Ivo Wolring (http://ivonet.nl)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<things xmlns="http://things.ivonet.nl">
+    <inbox>
+        <todos>
+            <todo>
+                <id>AAB76157-C4BE-417D-A5DB-AD8EB4FA86D5</id>
+                <name>1 item</name>
+                <creationDate>2013-07-05 11:46:19 +0000</creationDate>
+                <status>OPEN</status>
+            </todo>
+        </todos>
+    </inbox>
+    <today>
+        <todos>
+            <todo>
+                <id>5DA6DEA6-DC77-48DD-8970-A30599AD42F4</id>
+                <name>Pay bill</name>
+                <creationDate>2013-07-04 20:39:17 +0000</creationDate>
+                <status>CLOSED</status>
+                <activationDate>2013-07-03 22:00:00 +0000</activationDate>
+            </todo>
+        </todos>
+    </today>
+    <next>
+        <todos>
+            <todo>
+                <id>5DA6DEA6-DC77-48DD-8970-A30599AD42F4</id>
+                <name>Pay bill</name>
+                <creationDate>2013-07-04 20:39:17 +0000</creationDate>
+                <status>CLOSED</status>
+                <activationDate>2013-07-03 22:00:00 +0000</activationDate>
+            </todo>
+            <todo>
+                <id>BECA1180-2791-4136-A6A0-A868C7E9CFAD</id>
+                <name>afternoon free as compensation for too much work</name>
+                <creationDate>2013-07-04 20:14:59 +0000</creationDate>
+                <status>OPEN</status>
+                <activationDate>2013-07-03 22:00:00 +0000</activationDate>
+            </todo>
+            <todo>
+                <id>21B3B0F9-78CA-4FAC-819B-2FCF6A2066E2</id>
+                <name>Java wrapper for id3info</name>
+                <creationDate>2012-08-31 17:14:12 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>42F8FC7A-0CBE-4808-AF28-D21F30B2FAED</id>
+                <name>Java wrapper for mp4chaps</name>
+                <creationDate>2012-08-31 17:14:41 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>89346CC7-03D7-49C4-B767-735CB01F0F36</id>
+                <name>Preference for (max) bitrate</name>
+                <creationDate>2012-10-07 13:19:51 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>86F03611-03BA-48D0-8B88-D630580F6C54</id>
+                <name>Preference pane "always on top" is not a good idea</name>
+                <creationDate>2012-10-11 19:58:35 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>2FA0B5F4-7BC0-4D5B-91D0-0F29DA6D9879</id>
+                <name>Golfset op ebay?</name>
+                <creationDate>2013-05-09 12:18:13 +0000</creationDate>
+                <areaId>5D8C2B5C-A2FB-4510-980C-BFBA1394C5EC</areaId>
+                <tagIds>
+                    <id>B65961E7-A19A-4609-97DE-F4341EA9D5A1</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>4AC18828-7562-41FF-B269-2C70DE32B49A</id>
+                <name>Samsung tv ebay</name>
+                <creationDate>2013-05-09 12:17:55 +0000</creationDate>
+                <areaId>5D8C2B5C-A2FB-4510-980C-BFBA1394C5EC</areaId>
+                <tagIds>
+                    <id>B65961E7-A19A-4609-97DE-F4341EA9D5A1</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>D1BFE42D-6216-43DE-A263-7EF3D3192DFB</id>
+                <name>Businesscase verify</name>
+                <creationDate>2013-03-14 10:04:26 +0000</creationDate>
+                <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>4FF14666-14B7-4026-9B0E-68F70FB0B871</id>
+                <name>Userstory for chain test support</name>
+                <creationDate>2013-04-10 14:51:18 +0000</creationDate>
+                <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>3D3B497B-296D-4A78-A49F-160BA02AF42E</id>
+                <name>code jam</name>
+                <creationDate>2013-02-20 07:57:43 +0000</creationDate>
+                <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>EFAB4528-464B-43A1-A5DD-08CBEB584371</id>
+                <name>Linux</name>
+                <creationDate>2013-04-10 08:10:01 +0000</creationDate>
+                <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>A11EB45C-FEF4-4E8F-A3DD-442E1FA27747</id>
+                <name>Auto deployment</name>
+                <creationDate>2013-04-10 08:13:16 +0000</creationDate>
+                <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                <tagIds>
+                    <id>CC-Things-Tag-Work</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>2F6A56FD-88DC-4FB0-BD73-B74AA1A1DF4C</id>
+                <name>Verify and Refactoring checklist</name>
+                <creationDate>2013-03-08 08:03:14 +0000</creationDate>
+                <areaId>544CD563-A8B9-4608-ACAC-40C5EB71446F</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>CB71465A-3552-4038-B5C8-A56D8D77E869</id>
+                <name>Doomsday Warrior</name>
+                <creationDate>2013-05-13 17:26:36 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <tagIds>
+                    <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>E9BCBF91-D612-43FC-BCFE-454044189D14</id>
+                <name>Clive Custler</name>
+                <creationDate>2013-05-13 17:29:14 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <tagIds>
+                    <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>9DCB91C5-562F-40C8-80C1-E7BE4858C1EF</id>
+                <name>Demon wars saga</name>
+                <creationDate>2013-05-13 17:29:33 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <tagIds>
+                    <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>CCA27344-E98E-4F9E-8E49-5D4D7D689076</id>
+                <name>Batman 2</name>
+                <creationDate>2013-05-13 17:29:51 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <tagIds>
+                    <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>EB90A56B-5F1B-447B-8664-2DD33EC25422</id>
+                <name>Kevin Hearne - The Demon Barker of Wheat Street - short story available today</name>
+                <creationDate>2013-05-10 20:17:38 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <status>OPEN</status>
+                <dueDate>2013-07-22 22:00:00 +0000</dueDate>
+            </todo>
+            <todo>
+                <id>5AE59B8B-A4BC-4DBB-819C-E5D9091480EB</id>
+                <name>Jim Butcher Cold Days (#14) out today</name>
+                <creationDate>2012-10-01 10:56:11 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>32459A6C-05A2-4D05-A6F9-EFBC5F57705C</id>
+                <name>Good Time van Owl City &amp; Carly Rae Jepsen</name>
+                <creationDate>2012-11-11 22:34:24 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <tagIds>
+                    <id>1E5E5847-1BEB-4663-A621-7A60E62E6732</id>
+                </tagIds>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>9F5CD69D-90DC-4520-A4CA-D7FE65D898FC</id>
+                <name>Kim Harrison</name>
+                <creationDate>2012-09-25 15:45:55 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>27572B97-867A-4B53-8206-CB7B3888563B</id>
+                <name>Kaylie chan</name>
+                <creationDate>2012-12-04 14:13:43 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>F1D11F4A-B787-4D6D-9C6C-22351A4ACD46</id>
+                <name>Calibre library cleanup</name>
+                <creationDate>2012-08-25 14:00:10 +0000</creationDate>
+                <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>F7DE048D-C434-4CB2-8F73-78BFB4F4AF2A</id>
+                <name>Apache Valid user or ip</name>
+                <creationDate>2013-04-07 20:35:56 +0000</creationDate>
+                <areaId>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>DA598EED-6C9E-496F-9B17-F8E3F6C8E51F</id>
+                <name>tomEE on ubuntu</name>
+                <creationDate>2013-02-10 16:25:08 +0000</creationDate>
+                <areaId>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>241302AB-45EE-4B97-9FB8-BE16BFB538DF</id>
+                <name>tomcat 7 for ubuntu</name>
+                <creationDate>2011-11-06 16:40:34 +0000</creationDate>
+                <areaId>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>AF5F626D-3984-4C9A-B029-6652CA034900</id>
+                <name>Java versions cleanup</name>
+                <creationDate>2013-05-30 06:07:22 +0000</creationDate>
+                <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>33741B7B-259F-4E39-B6ED-CBB1015BA97F</id>
+                <name>remove old glassfish</name>
+                <creationDate>2013-04-12 15:37:51 +0000</creationDate>
+                <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>4A4146E1-8DB0-435F-ADA8-DE62F3CDD609</id>
+                <name>remove glassfishbundle</name>
+                <creationDate>2013-04-12 15:38:09 +0000</creationDate>
+                <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>CF18A498-FFA4-4560-82EB-331CADCCE8CC</id>
+                <name>ssd optimizing for mac</name>
+                <notes>- [url=http://www.benzado.com/blog/post/7/creating-a-ram-disk-on-mac-os-x]
+                    http://www.benzado.com/blog/post/7/creating-a-ram-disk-on-mac-os-x [/url]
+                    - [url=http://snippets.dzone.com/posts/show/1808] http://snippets.dzone.com/posts/show/1808 [/url]
+                </notes>
+                <creationDate>2011-11-25 08:24:44 +0000</creationDate>
+                <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>416C7DAC-CCE8-4E9A-A87F-E2DDDC64E50C</id>
+                <name>multimarkdown in java</name>
+                <notes>[url=http://mvnrepository.com/artifact/org.pegdown/pegdown]
+                    http://mvnrepository.com/artifact/org.pegdown/pegdown [/url]
+                    [url=http://search.maven.org/#search] http://search.maven.org/#search [/url]|ga|1|parboiled
+                </notes>
+                <creationDate>2011-12-16 15:06:34 +0000</creationDate>
+                <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                <status>OPEN</status>
+            </todo>
+        </todos>
+    </next>
+    <scheduled>
+        <todos>
+            <todo>
+                <id>43067C43-AA14-4E8F-859D-95E517CFE913</id>
+                <name>pdf from html in java</name>
+                <notes>iText
+                    [url=http://developers-blog.org/blog/default/2009/12/16/HTML-convert-to-Pdf-in-Java]
+                    http://developers-blog.org/blog/default/2009/12/16/HTML-convert-to-Pdf-in-Java [/url]
+                    [url=http://www.ibm.com/developerworks/opensource/library/os-javapdf/]
+                    http://www.ibm.com/developerworks/opensource/library/os-javapdf/ [/url]
+                    [url=http://itextpdf.com/] http://itextpdf.com/ [/url]
+                    [url=http://www.vogella.de/articles/JavaPDF/article.html#createpdf]
+                    http://www.vogella.de/articles/JavaPDF/article.html#createpdf [/url]
+                </notes>
+                <creationDate>2011-12-16 15:07:19 +0000</creationDate>
+                <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>91D01C67-A07F-4FC5-8918-B6E48E3DF028</id>
+                <name>smultron app</name>
+                <creationDate>2012-11-15 15:53:53 +0000</creationDate>
+                <areaId>3E1638E4-97A8-45B4-ACEB-45BE07536A00</areaId>
+                <status>OPEN</status>
+            </todo>
+        </todos>
+    </scheduled>
+    <someday>
+        <todos>
+            <todo>
+                <id>CA07949C-28A7-4FF2-BBF7-AB4FF8567160</id>
+                <name>Use the jar-bundler maven plugin</name>
+                <creationDate>2012-10-01 18:29:18 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>A241BFEC-3CED-4297-A857-7F4707581BC9</id>
+                <name>Research for getting coverart from internet</name>
+                <creationDate>2012-08-31 17:15:33 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>E668A9EF-F3AB-4296-91F9-EFBFE3B1F205</id>
+                <name>WS for Amazon</name>
+                <creationDate>2012-08-27 21:47:42 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+            <todo>
+                <id>80DE1F63-2424-4FDF-801C-9EB4F4E8B3DD</id>
+                <name>Embedded jetty server</name>
+                <creationDate>2012-08-31 17:07:12 +0000</creationDate>
+                <projectId>35B130B5-FA88-4B8F-AEF1-FE0E0CB0F64C</projectId>
+                <status>OPEN</status>
+            </todo>
+        </todos>
+    </someday>
+    <projects>
+        <project title="Ubuntu">
+            <id>3F5ED64E-1A79-4551-8500-E1EE49BD37B4</id>
+            <name>Ubuntu</name>
+            <status>OPEN</status>
+            <todos>
+                <todo>
+                    <id>93871EA9-F537-4AE2-8DBA-22114BC6AD8E</id>
+                    <name>termbox</name>
+                    <creationDate>2012-03-11 11:43:03 +0000</creationDate>
+                    <projectId>3F5ED64E-1A79-4551-8500-E1EE49BD37B4</projectId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </project>
+    </projects>
+    <areas>
+        <area title="Shoppinglist">
+            <id>9CCF4A85-F238-4918-B1E9-DE7CFBE73A17</id>
+            <name>Shoppinglist</name>
+        </area>
+        <area title="Work">
+            <id>C6FEC812-67E9-4D52-813B-B87212A1C490</id>
+            <name>Work</name>
+            <todos>
+                <todo>
+                    <id>D1BFE42D-6216-43DE-A263-7EF3D3192DFB</id>
+                    <name>Businesscase review</name>
+                    <creationDate>2013-03-14 10:04:26 +0000</creationDate>
+                    <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>B2575F2C-E9E8-4543-9203-E3B665D6CE9B</id>
+                    <name>workspace upgrade</name>
+                    <creationDate>2013-04-23 06:44:20 +0000</creationDate>
+                    <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>4FF14666-14B7-4026-9B0E-68F70FB0B871</id>
+                    <name>Userstory for chain test support</name>
+                    <creationDate>2013-04-10 14:51:18 +0000</creationDate>
+                    <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>B979FD16-1184-4754-AF57-E6A88749BE66</id>
+                    <name>Create Stub data generator</name>
+                    <creationDate>2013-04-10 13:29:40 +0000</creationDate>
+                    <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                    <tagIds>
+                        <id>C0CB3842-4B46-4812-A61A-40E2EF0BD5C4</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>3D3B497B-296D-4A78-A49F-160BA02AF42E</id>
+                    <name>code jam</name>
+                    <creationDate>2013-02-20 07:57:43 +0000</creationDate>
+                    <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>EFAB4528-464B-43A1-A5DD-08CBEB584371</id>
+                    <name>Linux</name>
+                    <creationDate>2013-04-10 08:10:01 +0000</creationDate>
+                    <areaId>C6FEC812-67E9-4D52-813B-B87212A1C490</areaId>
+                    <status>OPEN</status>
+                </todo>
+
+            </todos>
+        </area>
+        <area title="Refactoring">
+            <id>C93312D7-E3BD-4496-8F9C-5F6B8EB5BAD3</id>
+            <name>Refactoring</name>
+            <todos>
+                <todo>
+                    <id>4FDE5EA2-F560-4130-90F3-E943A4B54AA4</id>
+                    <name>no more than 1 indentation level</name>
+                    <notes>see refactoring from martin fowler</notes>
+                    <creationDate>2013-06-05 05:22:08 +0000</creationDate>
+                    <areaId>C93312D7-E3BD-4496-8F9C-5F6B8EB5BAD3</areaId>
+                    <tagIds>
+                        <id>DF27C6DC-67FA-4CA7-9D56-057858228FC9</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="Retrospective">
+            <id>BF3E560E-095B-42E4-93F9-55B0ABD0BB1E</id>
+            <name>Retrospective</name>
+            <todos>
+                <todo>
+                    <id>962E70D9-F97D-4963-9043-8F3FED0D56EF</id>
+                    <name>Focus more on scrum board :-|</name>
+                    <creationDate>2013-06-04 10:44:27 +0000</creationDate>
+                    <areaId>BF3E560E-095B-42E4-93F9-55B0ABD0BB1E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>390D3452-DC2B-4C93-A5ED-E64F22F2590C</id>
+                    <name>Communication was way better :-)</name>
+                    <creationDate>2013-06-04 10:43:33 +0000</creationDate>
+                    <areaId>BF3E560E-095B-42E4-93F9-55B0ABD0BB1E</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="Borrowed">
+            <id>083241EB-9504-477E-9841-3702E0FB2136</id>
+            <name>Uitgeleend</name>
+            <todos>
+                <todo>
+                    <id>133221E2-F249-4D5B-8396-42EACD224FC2</id>
+                    <name>powercord to neigbour</name>
+                    <creationDate>2012-12-21 16:26:25 +0000</creationDate>
+                    <areaId>083241EB-9504-477E-9841-3702E0FB2136</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="Books">
+            <id>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</id>
+            <name>Books</name>
+            <todos>
+                <todo>
+                    <id>AFD76834-9505-4BB2-A24F-B4A26272E902</id>
+                    <name>Serpendskiss van rogue angel is niet goed!</name>
+                    <creationDate>2013-06-17 06:24:05 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>CB71465A-3552-4038-B5C8-A56D8D77E869</id>
+                    <name>Doomsday Warrior</name>
+                    <creationDate>2013-05-13 17:26:36 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <tagIds>
+                        <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>E9BCBF91-D612-43FC-BCFE-454044189D14</id>
+                    <name>Clive Custler</name>
+                    <creationDate>2013-05-13 17:29:14 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <tagIds>
+                        <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>9DCB91C5-562F-40C8-80C1-E7BE4858C1EF</id>
+                    <name>Demon wars saga</name>
+                    <creationDate>2013-05-13 17:29:33 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <tagIds>
+                        <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>CCA27344-E98E-4F9E-8E49-5D4D7D689076</id>
+                    <name>Batman 2</name>
+                    <creationDate>2013-05-13 17:29:51 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <tagIds>
+                        <id>8EA73D6F-52DB-4459-86E8-1851996B06E3</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>EB90A56B-5F1B-447B-8664-2DD33EC25422</id>
+                    <name>Kevin Hearne - The Demon Barker of Wheat Street - short story available today</name>
+                    <creationDate>2013-05-10 20:17:38 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                    <dueDate>2013-07-22 22:00:00 +0000</dueDate>
+                </todo>
+                <todo>
+                    <id>5AE59B8B-A4BC-4DBB-819C-E5D9091480EB</id>
+                    <name>Jim Butcher Cold Days (#14) out today</name>
+                    <creationDate>2012-10-01 10:56:11 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>32459A6C-05A2-4D05-A6F9-EFBC5F57705C</id>
+                    <name>Good Time van Owl City &amp; Carly Rae Jepsen</name>
+                    <creationDate>2012-11-11 22:34:24 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <tagIds>
+                        <id>1E5E5847-1BEB-4663-A621-7A60E62E6732</id>
+                    </tagIds>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>9F5CD69D-90DC-4520-A4CA-D7FE65D898FC</id>
+                    <name>Kim Harrison</name>
+                    <creationDate>2012-09-25 15:45:55 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>3CA02FBF-8644-46EC-82C9-6C46BF08BDA4</id>
+                    <name>Ilona andrews hexed audiobook!</name>
+                    <creationDate>2011-09-10 19:21:22 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>27572B97-867A-4B53-8206-CB7B3888563B</id>
+                    <name>Kaylie chan</name>
+                    <creationDate>2012-12-04 14:13:43 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>F1D11F4A-B787-4D6D-9C6C-22351A4ACD46</id>
+                    <name>Calibre library cleanup</name>
+                    <creationDate>2012-08-25 14:00:10 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>79B43AE8-7F7B-4F16-9C03-30F9CAC85109</id>
+                    <name>iPad vol gooien met ebooks</name>
+                    <creationDate>2012-08-25 14:00:22 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>BFBBC645-E2FB-4E49-B739-58ACE50BC562</id>
+                    <name>Rob Thurman</name>
+                    <creationDate>2012-06-24 18:36:19 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>D992A2F3-1373-4D6B-9894-BAFFC3A1593A</id>
+                    <name>Eileen Wilks</name>
+                    <creationDate>2012-06-24 18:36:28 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>32FE6440-082C-4B90-B982-7CC59D57F3C9</id>
+                    <name>Yasmine Galenorn</name>
+                    <creationDate>2012-06-24 18:36:38 +0000</creationDate>
+                    <areaId>20257F77-6269-432D-AFEE-1B2FE4B8EA5E</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="Server">
+            <id>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</id>
+            <name>Server</name>
+            <todos>
+                <todo>
+                    <id>F7DE048D-C434-4CB2-8F73-78BFB4F4AF2A</id>
+                    <name>Apache Valid user or ip</name>
+                    <creationDate>2013-04-07 20:35:56 +0000</creationDate>
+                    <areaId>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>DA598EED-6C9E-496F-9B17-F8E3F6C8E51F</id>
+                    <name>tomEE on ubuntu</name>
+                    <creationDate>2013-02-10 16:25:08 +0000</creationDate>
+                    <areaId>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>241302AB-45EE-4B97-9FB8-BE16BFB538DF</id>
+                    <name>tomcat 7 for ubuntu</name>
+                    <creationDate>2011-11-06 16:40:34 +0000</creationDate>
+                    <areaId>7154125A-0DAA-40A5-A37E-DFB62DC3FB61</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="Mac OSX">
+            <id>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</id>
+            <name>Mac OSX</name>
+            <todos>
+                <todo>
+                    <id>AF5F626D-3984-4C9A-B029-6652CA034900</id>
+                    <name>Java versions cleanup</name>
+                    <creationDate>2013-05-30 06:07:22 +0000</creationDate>
+                    <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>33741B7B-259F-4E39-B6ED-CBB1015BA97F</id>
+                    <name>remove old glassfish</name>
+                    <creationDate>2013-04-12 15:37:51 +0000</creationDate>
+                    <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>4A4146E1-8DB0-435F-ADA8-DE62F3CDD609</id>
+                    <name>remove glassfishbundle</name>
+                    <creationDate>2013-04-12 15:38:09 +0000</creationDate>
+                    <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>CF18A498-FFA4-4560-82EB-331CADCCE8CC</id>
+                    <name>ssd optimizing for mac</name>
+                    <notes>- [url=http://www.benzado.com/blog/post/7/creating-a-ram-disk-on-mac-os-x]
+                        http://www.benzado.com/blog/post/7/creating-a-ram-disk-on-mac-os-x [/url]
+                        - [url=http://snippets.dzone.com/posts/show/1808] http://snippets.dzone.com/posts/show/1808
+                        [/url]
+                    </notes>
+                    <creationDate>2011-11-25 08:24:44 +0000</creationDate>
+                    <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>416C7DAC-CCE8-4E9A-A87F-E2DDDC64E50C</id>
+                    <name>multimarkdown in java</name>
+                    <notes>[url=http://mvnrepository.com/artifact/org.pegdown/pegdown]
+                        http://mvnrepository.com/artifact/org.pegdown/pegdown [/url]
+                        [url=http://search.maven.org/#search] http://search.maven.org/#search [/url]|ga|1|parboiled
+                    </notes>
+                    <creationDate>2011-12-16 15:06:34 +0000</creationDate>
+                    <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>43067C43-AA14-4E8F-859D-95E517CFE913</id>
+                    <name>pdf from html in java</name>
+                    <notes>iText
+                        [url=http://developers-blog.org/blog/default/2009/12/16/HTML-convert-to-Pdf-in-Java]
+                        http://developers-blog.org/blog/default/2009/12/16/HTML-convert-to-Pdf-in-Java [/url]
+                        [url=http://www.ibm.com/developerworks/opensource/library/os-javapdf/]
+                        http://www.ibm.com/developerworks/opensource/library/os-javapdf/ [/url]
+                        [url=http://itextpdf.com/] http://itextpdf.com/ [/url]
+                        [url=http://www.vogella.de/articles/JavaPDF/article.html#createpdf]
+                        http://www.vogella.de/articles/JavaPDF/article.html#createpdf [/url]
+                    </notes>
+                    <creationDate>2011-12-16 15:07:19 +0000</creationDate>
+                    <areaId>23238F09-ED41-4BC8-BE6C-65BDB1E48E21</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="Development">
+            <id>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</id>
+            <name>Development</name>
+            <todos>
+                <todo>
+                    <id>A0B39627-2089-478E-B410-5C053F72F199</id>
+                    <name>Windows</name>
+                    <notes>[url=http://www.modern.ie/en-us/virtualization-tools#downloads]
+                        http://www.modern.ie/en-us/virtualization-tools#downloads [/url]
+                    </notes>
+                    <creationDate>2013-07-02 08:26:48 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>1E6D252F-8071-495C-9C5C-2962A83BAAFD</id>
+                    <name>Things applescript</name>
+                    <notes>culturedcode.com/things/blog/2009/05/things-11-brings-extensive-applescript-support.html
+                    </notes>
+                    <creationDate>2013-07-01 21:52:58 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>D5C89DF2-B1A8-4B75-9D7C-DBE473C15E79</id>
+                    <name>Scripting bridge Applescript / python</name>
+                    <notes>
+                        https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/RubyPythonCocoa/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004936
+                    </notes>
+                    <creationDate>2013-07-01 18:43:40 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>951A86DA-661B-408B-AEF0-898EC5A03B7A</id>
+                    <name>Tripservice refactoring sandro mancuso</name>
+                    <creationDate>2013-06-12 15:38:29 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>C01BFAE0-52F5-4141-B3E0-6899F9F5D95A</id>
+                    <name>Plumbr discovers memory leaks and reports all the details you need to solve it, well before
+                        any OutOfMemoryErrors
+                    </name>
+                    <notes>plumbr.eu</notes>
+                    <creationDate>2013-06-29 18:14:04 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>08A630E5-463E-482F-976B-93591FFE0C93</id>
+                    <name>Chronon - log your application execution</name>
+                    <notes>chrononsystems.com</notes>
+                    <creationDate>2013-06-29 18:12:25 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>DFE04C6E-BA15-4781-B359-A7F61CA7B238</id>
+                    <name>Byteman</name>
+                    <notes>https://www.jboss.org/byteman</notes>
+                    <creationDate>2013-06-29 18:06:45 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>C293196B-7E09-425E-90A0-76D2DDA5F616</id>
+                    <name>Git pull en merge en rebase dingen doen</name>
+                    <creationDate>2013-06-28 07:27:05 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>56A2DCBA-237C-4E27-94B5-93347EE7AA28</id>
+                    <name>Dropbox developer account - OAuth2</name>
+                    <creationDate>2013-06-06 17:22:47 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>A9A54340-577D-4372-ACBA-E95CE63DB42C</id>
+                    <name>Things API</name>
+                    <creationDate>2013-05-31 16:26:47 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>AF652AE5-29CA-4607-B5BF-6F4BC08BEF34</id>
+                    <name>Project lambda</name>
+                    <notes>[url=http://cr.openjdk.java.net/~mr/lambda/straw-man/]
+                        http://cr.openjdk.java.net/~mr/lambda/straw-man/ [/url]
+                    </notes>
+                    <creationDate>2010-11-18 21:09:57 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>0F44EDD2-898A-47CF-BC98-08773F442598</id>
+                    <name>Spring roo</name>
+                    <notes>[url=http://www.springsource.org/roo] http://www.springsource.org/roo [/url]</notes>
+                    <creationDate>2010-11-18 21:10:25 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>3D8E2E56-6C56-4015-A685-A48E663F0201</id>
+                    <name>Caliper</name>
+                    <notes>[url=http://code.google.com/p/caliper/source/checkout]
+                        http://code.google.com/p/caliper/source/checkout [/url]
+                    </notes>
+                    <creationDate>2010-11-18 21:10:37 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>843F73E4-4E89-4E81-B2B1-5F17B926EED7</id>
+                    <name>Arquilian</name>
+                    <creationDate>2012-02-02 10:09:02 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>B249906A-ECA6-408E-95D6-F3C4803B8338</id>
+                    <name>DevOps</name>
+                    <creationDate>2012-02-02 10:12:19 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>94E903CF-2D11-4539-B151-9757258CA1D0</id>
+                    <name>Grizzly</name>
+                    <notes>[url=http://grizzly.java.net/] http://grizzly.java.net/ [/url]</notes>
+                    <creationDate>2010-11-18 21:11:44 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>98D0315F-C60D-42BB-A0C8-0F854F7ACCF2</id>
+                    <name>Google app engine</name>
+                    <notes>[url=http://code.google.com/appengine/docs/whatisgoogleappengine.html]
+                        http://code.google.com/appengine/docs/whatisgoogleappengine.html [/url]
+                    </notes>
+                    <creationDate>2010-11-20 21:44:37 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>37664FE7-63DD-4200-8A2C-8B1456853830</id>
+                    <name>Dart</name>
+                    <creationDate>2012-02-02 09:06:56 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>7CEC7610-44D5-45A6-85F9-443DAD54F9A1</id>
+                    <name>Scala</name>
+                    <notes>[url=https://www.coursera.org/] https://www.coursera.org/ [/url]</notes>
+                    <creationDate>2011-03-31 08:35:33 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>245EF6FF-5E0E-44F2-BBCD-4562A77941FF</id>
+                    <name>JavaFX</name>
+                    <notes>[url=http://docs.oracle.com/javafx/index.html] http://docs.oracle.com/javafx/index.html
+                        [/url]
+                    </notes>
+                    <creationDate>2012-11-16 10:02:19 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>7DA999AE-0AF2-428C-81AD-8009EC4DECEE</id>
+                    <name>Security</name>
+                    <creationDate>2012-02-02 09:57:16 +0000</creationDate>
+                    <areaId>5EC0DF51-63AE-4B32-B7D0-8326FBDF3392</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+        <area title="RaspberryPi">
+            <id>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</id>
+            <name>RaspberryPi</name>
+            <todos>
+                <todo>
+                    <id>833E9C31-A7DD-4EEB-87C8-E1B4BED01855</id>
+                    <name>Mobile network</name>
+                    <notes>mancave.conrad.nl/bouw-je-eigen-mobiele-netwerk-met-raspberry-pi/</notes>
+                    <creationDate>2013-05-30 18:19:51 +0000</creationDate>
+                    <areaId>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>D49B3955-DCAD-4488-98CF-637030A4D93D</id>
+                    <name>Remote remote</name>
+                    <notes>http://ivonet.nl</notes>
+                    <creationDate>2013-05-09 12:29:38 +0000</creationDate>
+                    <areaId>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>26B851C9-47DB-4E40-A21F-8C8E88DE2BB1</id>
+                    <name>Remote remote apps bouwen.</name>
+                    <notes>- webapp met knop
+                        - poll ping app voor autonome beslissingen
+                    </notes>
+                    <creationDate>2013-05-09 12:29:25 +0000</creationDate>
+                    <areaId>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</areaId>
+                    <status>CLOSED</status>
+                </todo>
+                <todo>
+                    <id>68343B57-5542-4FCC-92D0-5B04C52BC52C</id>
+                    <name>Cluster</name>
+                    <creationDate>2013-04-09 14:17:54 +0000</creationDate>
+                    <areaId>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>1C3431E8-37A8-468C-A7CA-A7DD1BB99A05</id>
+                    <name>Cloud</name>
+                    <creationDate>2013-04-09 14:18:24 +0000</creationDate>
+                    <areaId>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</areaId>
+                    <status>OPEN</status>
+                </todo>
+                <todo>
+                    <id>5D99C09D-D0A9-4429-BBA5-EDF594800A02</id>
+                    <name>Scratch programming with the kids</name>
+                    <creationDate>2013-04-09 14:51:22 +0000</creationDate>
+                    <areaId>3ECE7129-2E96-4BC6-9FF3-9F66C2832EDA</areaId>
+                    <status>OPEN</status>
+                </todo>
+            </todos>
+        </area>
+    </areas>
+    <tags>
+        <tag>
+            <id>6DB2DAF8-23E4-48ED-BEB7-8C2E9C4507BA</id>
+            <name>osx mac</name>
+        </tag>
+        <tag>
+            <id>2DFD7A5B-8756-4A94-8492-7D39C79C3216</id>
+            <name>RaspberryPi</name>
+        </tag>
+        <tag>
+            <id>1A161912-D5DA-4711-BCA4-1E0B65D543F4</id>
+            <name>correspondence</name>
+        </tag>
+        <tag>
+            <id>659CA186-3A04-4AC4-A37C-181AAE80474B</id>
+            <name>email</name>
+        </tag>
+        <tag>
+            <id>F8DF0C6F-5B4E-40A2-AF3A-A2F7131DEEEE</id>
+            <name>Devoxx</name>
+        </tag>
+        <tag>
+            <id>17E70CE0-36A6-42D6-A6FB-7FD549D959EF</id>
+            <name>IvoNet</name>
+        </tag>
+        <tag>
+            <id>51BBFFE5-09B5-42CB-891C-D1AD42A3E69A</id>
+            <name>ict</name>
+        </tag>
+        <tag>
+            <id>B2E4FB80-C977-478A-AF76-1068E45D7E00</id>
+            <name>issue</name>
+        </tag>
+        <tag>
+            <id>BBC87BBA-9890-4756-BBBD-B2B43D3278A5</id>
+            <name>test finding</name>
+        </tag>
+        <tag>
+            <id>C0CB3842-4B46-4812-A61A-40E2EF0BD5C4</id>
+            <name>refactoring</name>
+        </tag>
+        <tag>
+            <id>53E207B6-1D8C-4A07-81DE-2072507F993B</id>
+            <name>configuration</name>
+        </tag>
+        <tag>
+            <id>48872381-FD87-46C6-99F3-AE3D578BC5C1</id>
+            <name>feature</name>
+        </tag>
+        <tag>
+            <id>6875F29B-5F56-4668-A45E-88070835932B</id>
+            <name>DoD</name>
+        </tag>
+        <tag>
+            <id>F32637BD-CD6C-471D-8D0B-2AF35093CE5A</id>
+            <name>verify</name>
+        </tag>
+        <tag>
+            <id>C446F139-58BE-45B6-BED6-16CB44BBE95E</id>
+            <name>standby</name>
+        </tag>
+        <tag>
+            <id>51D24646-5AFA-458F-BB29-318D6CD82E6A</id>
+            <name>followup</name>
+        </tag>
+        <tag>
+            <id>6F6C5BEB-FD88-420D-A863-9F76ECAB0A1B</id>
+            <name>architectuur</name>
+        </tag>
+        <tag>
+            <id>08CA4EF7-2116-4BDA-A5F3-838C00AF091F</id>
+            <name>update</name>
+        </tag>
+    </tags>
+</things>
