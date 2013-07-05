@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2013 by Ivo Wolring (http://ivonet.nl)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<things xmlns="http://things.ivonet.nl">
+    <today>
+        <todos>
+            <todo>
+                <id>159C3AF1-1193-43D2-8027-2FE5913AE2C6</id>
+                <name>Call Mom</name>
+                <creationDate>2013-07-04 13:58:24 +0000</creationDate>
+                <status>OPEN</status>
+                <activationDate>2013-07-03 22:00:00 +0000</activationDate>
+            </todo>
+            <todo>
+                <id>5A50A8ED-D844-4FEB-8EA6-65C70879BF23</id>
+                <name>Pay phone bill</name>
+                <creationDate>2013-07-01 22:05:19 +0000</creationDate>
+                <tagIds>
+                    <id>659CA186-3A04-4AC4-A37C-181AAE80474B</id>
+                </tagIds>
+                <status>OPEN</status>
+                <activationDate>2013-07-03 22:00:00 +0000</activationDate>
+            </todo>
+            <todo>
+                <id>BD27B1CB-8AF8-4597-87A1-9A7295AD062E</id>
+                <name>Go dansing</name>
+                <notes>with a lot of people</notes>
+                <creationDate>2013-06-30 21:50:27 +0000</creationDate>
+                <tagIds>
+                    <id>53E207B6-1D8C-4A07-81DE-2072507F993B</id>
+                    <id>4C6C9E3D-041B-4B29-AFC8-28C5355E70D4</id>
+                </tagIds>
+                <status>OPEN</status>
+                <activationDate>2013-06-29 22:00:00 +0000</activationDate>
+            </todo>
+        </todos>
+    </today>
+</things>

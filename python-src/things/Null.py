@@ -108,7 +108,7 @@ None: log.write('bla').
 In the new object model, Python does not call __getattr__ on an instance for
 any special methods needed to perform an operation on the instance (rather, it
 looks up such methods in the instance class' slots). You may have to take care
-and customize Null to your application's needs regarding operations on null
+and customize Null to your bootstrap's needs regarding operations on null
 objects, and therefore special methods of the null objects' class, either
 directly in the class' sources or by subclassing it appropriately. For example,
 with this recipe's Null, you cannot index Null instances, nor take their length,

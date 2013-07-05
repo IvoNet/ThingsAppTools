@@ -24,13 +24,31 @@
     <packaging>pom</packaging>
     <name>IvoNet - Things.app - tools</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>jaxws-rt</artifactId>
-            <version>2.1</version>
-        </dependency>
-    </dependencies>
+
+    <organization>
+        <name>IvoNet</name>
+        <url>https://www.ivonet.nl</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>IvoNet</id>
+            <name>Ivo Woltring</name>
+            <email>woltring@ivonet.nl</email>
+            <roles>
+                <role>Lead Developer</role>
+                <role>Architect</role>
+                <role>Designer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,18 +60,6 @@
         <url>git@github.com:IvoNet/ThingsAppTools.git</url>
     </scm>
 
-    <!--<distributionManagement>-->
-    <!--<repository>-->
-    <!--<id>releases</id>-->
-    <!--<name>Releases</name>-->
-    <!--<url>http://nexus.ivonet.nl/content/repositories/releases</url>-->
-    <!--</repository>-->
-    <!--<snapshotRepository>-->
-    <!--<id>snapshots</id>-->
-    <!--<name>Snapshots</name>-->
-    <!--<url>http://nexus.ivonet.nl/content/repositories/snapshots</url>-->
-    <!--</snapshotRepository>-->
-    <!--</distributionManagement>-->
 
     <distributionManagement>
         <repository>
@@ -66,5 +72,6 @@
 
     <modules>
         <module>things-jaxb-generated</module>
+        <module>ThingsWeb</module>
     </modules>
 </project>

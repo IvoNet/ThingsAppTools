@@ -1,0 +1,105 @@
+<!doctype html>
+<!--
+  ~ Copyright (c) 2013 by Ivo Wolring (http://ivonet.nl)
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<html ng-app="things">
+<head>
+    <title>Things</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--see here for more information about the life bootstrap: http://www.bootstrapcdn.com/-->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <!--<script src="js/app.js"></script>-->
+    <script src="js/controller.js"></script>
+</head>
+
+<body ng-controller="CtrlThings">
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">Things</a>
+
+            <div class="nav-collapse collapse">
+                <!--<p class="navbar-text pull-right">-->
+                <!--Logged in as <a href="#" class="navbar-link">Username</a>-->
+                <!--</p>-->
+                <!--<ul class="nav">-->
+                <!--<li class="active"><a href="#">Home</a></li>-->
+                <!--<li><a href="#about">About</a></li>-->
+                <!--<li><a href="#contact">Contact</a></li>-->
+                <!--</ul>-->
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <!--Sidebar content-->
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Collect</li>
+                    <li><a href="" ng-click="showToDos(things.inbox)">Inbox</a></li>
+                    <li class="nav-header">Focus</li>
+                    <li><a href="" ng-click="showToDos(things.today)">Today</a></li>
+                    <li><a href="" ng-click="showToDos(things.next)">Next</a></li>
+                    <li><a href="" ng-click="showToDos(things.scheduled)">Scheduled</a></li>
+                    <li><a href="" ng-click="showToDos(things.someday)">Someday</a></li>
+                    <li class="nav-header">Active Projects</li>
+                    <li ng-repeat="project in things.projects.project"><a href="" ng-click="showToDos(project)">{{
+                        project.name }}</a></li>
+                    <li class="nav-header">Areas</li>
+                    <li ng-repeat="area in things.areas.area"><a href="" ng-click="showToDos(area)">{{ area.name }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="span9">
+            <div class="hero-unit">
+                <table class="table table-hover table-striped table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                        <th class="span1">#</th>
+                        <th class="span8">Todo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="todo in todos">
+                        <td>
+                            <input type="checkbox" ng-model="todo.status" ng-true-value="CLOSED"
+                                   ng-false-value="OPEN" ng-change="checkBoxIvo(todo)">
+                        </td>
+                        <td class="">{{ todo.name }}
+                            <pre>{{todo | json}}</pre>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
