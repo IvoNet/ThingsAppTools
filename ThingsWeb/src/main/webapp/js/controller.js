@@ -30,7 +30,8 @@ function CtrlThings($scope, $http) {
 
 
     $scope.showToDos = function (category) {
-        if (!category.todos) {
+
+        if (!category || !category.todos) {
             $scope.todos = []
         } else {
             $scope.todos = category.todos.todo;
