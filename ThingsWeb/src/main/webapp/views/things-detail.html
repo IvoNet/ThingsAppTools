@@ -14,3 +14,84 @@
   ~ limitations under the License.
   -->
 
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container-fluid">
+            <!--<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">-->
+            <!--<span class="icon-bar">asdf</span>-->
+            <!--<span class="icon-bar">asfasdf</span>-->
+            <!--<span class="icon-bar">adsfasdf</span>-->
+            <!--</button>-->
+            <a class="brand" href="#">Things</a>
+
+            <div class="nav-collapse collapse">
+                <p class="navbar-text pull-right">
+                    <button class="btn btn-mini btn-inverse" type="button" data-toggle="button"
+                            ng-click="toggleDebug()">Debug
+                    </button>
+                </p>
+                <ul class="nav">
+                    <!--<li class="active"><a href="">Home</a></li>-->
+                    <!--<li><a href="#">About</a></li>-->
+                    <li><a href="http://www.ivonet.nl/home/contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span2">
+            <!--Sidebar content-->
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Collect</li>
+                    <li><a href="" ng-click="showToDos(things.inbox)">Inbox</a></li>
+                    <li class="nav-header">Focus</li>
+                    <li><a href="" ng-click="showToDos(things.today)">Today</a></li>
+                    <li><a href="" ng-click="showToDos(things.next)">Next</a></li>
+                    <li><a href="" ng-click="showToDos(things.scheduled)">Scheduled</a></li>
+                    <li><a href="" ng-click="showToDos(things.someday)">Someday</a></li>
+                    <li class="nav-header">Active Projects</li>
+                    <li ng-repeat="project in things.projects.project"><a href="" ng-click="showToDos(project)">{{
+                        project.name }}</a></li>
+                    <li class="nav-header">Areas</li>
+                    <li ng-repeat="area in things.areas.area"><a href="" ng-click="showToDos(area)">{{ area.name }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="span10">
+            <div class="hero-unit">
+                <table class="table table-hover table-striped table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                        <th class="span1">#</th>
+                        <th class="span8">Todo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="todo in todos">
+                        <td>
+                            <label>
+                                <input type="checkbox" ng-model="todo.status" ng-true-value="CLOSED"
+                                       ng-false-value="OPEN">
+                            </label>
+                        </td>
+                        <td>
+                            <div class="span8">{{ todo.name }}
+                                <pre ng-model="debug" ng-show="debug">{{todo | json}}</pre>
+                            </div>
+                            <div class="span2">
+                                <div ng-repeat="id in todo.tagIds.id">{{ id }}</div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

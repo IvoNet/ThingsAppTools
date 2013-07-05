@@ -17,6 +17,6 @@
 angular.module('things', []).
         config(['$routeProvider', function ($routeProvider) {
             $routeProvider.
-                    when('/rest/things', {templateUrl: 'views/things-detail.html', controller: CtrlThings}).
+                    when('/', {templateUrl: 'views/things-detail.html', controller: CtrlThings}).
                     otherwise({redirectTo: '/'});
         }]);

@@ -21,6 +21,7 @@
  * @param $http for doing http requests
  */
 function CtrlThings($scope, $http) {
+    $scope.debug = false;
 
     $http.get('rest/things').success(function (data) {
         $scope.things = data;
@@ -34,14 +35,10 @@ function CtrlThings($scope, $http) {
         } else {
             $scope.todos = category.todos.todo;
         }
-    }
+    };
 
-    $scope.checkBoxIvo = function (todo) {
-        if (todo.status == 'CLOSED') {
-            todo.completionDate = "foo";
-        } else {
-            del(todo.completionDate);
-        }
+    $scope.toggleDebug = function () {
+        $scope.debug = !$scope.debug;
     }
 
 }
