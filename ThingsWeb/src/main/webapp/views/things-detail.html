@@ -49,8 +49,8 @@
                     <li><a href="" ng-click="showToDos(things.scheduled)">Scheduled</a></li>
                     <li><a href="" ng-click="showToDos(things.someday)">Someday</a></li>
                     <li class="nav-header">Active Projects</li>
-                    <li ng-repeat="project in things.projects.project"><a href="" ng-click="showToDos(project)">{{
-                        project.name }}</a></li>
+                    <li ng-repeat="project in things.projects.project">
+                        <a href="" ng-click="showToDos(project)"> {{ project.name }}</a></li>
                     <li class="nav-header">Areas</li>
                     <li ng-repeat="area in things.areas.area"><a href="" ng-click="showToDos(area)">{{ area.name }}</a>
                     </li>

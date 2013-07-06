@@ -15,7 +15,7 @@
  */
 
 /**
- * The Things Controller for angular.
+ * The AngularJS Things Controller.
  *
  * @param $scope the scope for the application
  * @param $http for doing http requests

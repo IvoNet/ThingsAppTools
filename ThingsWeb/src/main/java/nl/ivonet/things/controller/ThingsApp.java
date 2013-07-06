@@ -37,7 +37,8 @@ public class ThingsApp {
     @Produces(MediaType.APPLICATION_JSON)
     public Things getClichedMessage() {
         //FIXME Adjust the path below to the folder you have this file in!
-        return dao
-                .retrieveThings("/Users/ivonet/dev/github/ThingsExporter/ThingsWeb/src/test/resources/ThingsExport.xml");
+        return dao.retrieveThings("/Users/ivonet/dev/github/ThingsExporter/tmp/ThingsExport.xml");
     }
+
+
 }
