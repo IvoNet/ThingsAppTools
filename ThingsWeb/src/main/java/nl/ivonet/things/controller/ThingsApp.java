@@ -35,7 +35,7 @@ public class ThingsApp {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Things getClichedMessage() {
+    public Things retrieveThings() {
         //FIXME Adjust the path below to the folder you have this file in!
         return dao.retrieveThings("/Users/ivonet/dev/github/ThingsExporter/tmp/ThingsExport.xml");
     }
