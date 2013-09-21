@@ -15,12 +15,23 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
+DBG = 1
+WRN = 2
+ERR = 3
+DEBUG = DBG
+
+
+def _(message, LEVEL=DBG):
+    if LEVEL >= DEBUG:
+        print message
+
+
 try:
     from Foundation import *
     from ScriptingBridge import *
 except ImportError:
-    print "Please install the pyobjc package to make this script work."
-    print "Working on a Mac and having Things installed is also a must :-)."
+    _("Please install the pyobjc package to make this script work.", ERR)
+    _("Working on a Mac and having Things installed is also a must :-).", ERR)
     sys.exit(1)
 
 import Null
@@ -52,7 +63,7 @@ class ThingsToDo(object):
         """
         :return: the name of the todo
         """
-        return self.todo.name()
+        return self.todo.name().encode(UTF_8)
 
     def notes(self):
         """
@@ -489,7 +500,7 @@ class ThingsApp(object):
     def __init__(self):
         self.Things = SBApplication.applicationWithBundleIdentifier_("com.culturedcode.things")
         if not self.Things.isRunning():
-            print "Things does not appear to be running. Activating it now..."
+            _("Things does not appear to be running. Activating it now...", WRN)
             self.Things.activate()
 
     def __getitem__(self, item):
@@ -532,3 +543,13 @@ class ThingsApp(object):
         :return: ThingsTags representation of all tags used in Things
         """
         return ThingsTags(self.Things.tags())
+
+    def toDos(self):
+        return ThingsToDos(self.Things.toDos())
+
+
+#--------------------------------------------------------------------------
+if __name__ == "__main__":
+    app = SBApplication.applicationWithBundleIdentifier_("com.culturedcode.things")
+    # todo = app.parseQuicksilverInput_("#foo ThingsTools trial for parsing Quicksilver notation [Today] ::notes here >2013-10-07 10:00 +0000")
+    print help(app.toDos().addObject_)

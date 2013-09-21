@@ -41,15 +41,15 @@ Python Things.app exporter / importer tool:
 * (done) As a user I WANT TO be able to export Things.app lists to Xml IN ORDER TO have a usable backup
 * (done) As a user I WANT TO be able to import specific Xml to Things.app IN ORDER TO update Things based on external data
 * (done) As a user I WANT TO have a contract defined on the Xml IN ORDER TO be use this contract elsewhere (webservice)
-* (open) As a developer I WANT TO enhance the Things.app AppleScript API wrapper in Python IN ORDER TO write to Things.app
+* (in progress) As a developer I WANT TO enhance the Things.app AppleScript API wrapper in Python IN ORDER TO write to Things.app
 
 
 Java webapplication based on Things exported XML:
 
-* (in progress) As a developer I WANT TO make the website based on restfull services (EE7) and AngularJS IN ORDER TO learn something
+* (done) As a developer I WANT TO make the website based on restfull services (EE7) and AngularJS IN ORDER TO learn something
 * (done) As a developer I WANT TO be able generate java code based on the schema IN ORDER TO be able to use it a webapplication
 * (done) As a user I WANT TO see the exported **Today** IN ORDER TO view my today todo's anywhere (even on non macs)
-* (in progress) As a user I WANT TO be able to change the status todo's IN ORDER TO be able to provide input for syncing Things.app
+* (done) As a user I WANT TO be able to change the status todo's IN ORDER TO be able to provide input for syncing Things.app
 * (done) As a user I WANT TO be see the other **Lists** IN ORDER TO view the todos anywhere
 * (done) As a user I WANT TO have the "same" look and feel as Things IN ORDER TO get what I'm used to.
 * (open) As a developer I WANT TO be able write to a Xml IN ORDER TO provide data to sync to Things.app

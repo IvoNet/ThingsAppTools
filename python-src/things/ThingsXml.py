@@ -21,6 +21,8 @@ from Things import ThingsToDos, ThingsArea, ThingsTags, ThingsProject, ThingsApp
 STATUS_CLOSED = "CLOSED"
 STATUS_OPEN = "OPEN"
 
+DEBUG = True
+
 
 def Xml():
     """
@@ -137,25 +139,16 @@ def __printToDos(thingsToDos, openOnly=True, xml=Xml()):
         return xml
     with xml.todos():
         for todo in thingsToDos:
-            print "Processing todo:", todo.name()
+            try:
+                print "Processing todo: " + todo.name()
+            except:
+                pass
             if openOnly:
                 if not todo.is_open():
                     continue
             with xml.todo():
                 __printTodo(todo, xml)
     return xml
-
-
-# this one will print just about anything and I see no reason for it
-# def printLists(thingsLists, xml=Xml()):
-#     if not isinstance(thingsLists, ThingsLists):
-#         raise TypeError("Input parameter should be a ThingsToDos")
-#     with xml.lists():
-#         for thingsList in thingsLists:
-#             print "Processing list:", thingsList.name()
-#             xml.id(thingsList.id())
-#             xml.title(thingsList.name())
-#             printToDos(thingsList.toDos(), xml)
 
 
 def __printToday(thingsToDos, openOnly=True, xml=Xml()):
@@ -265,5 +258,14 @@ def todayToXml(statusOpenOnly=True):
     return str(xml)
 
 
+def thingsToDos(statusOpenOnly=True):
+    print "Processing Things.toDos()...."
+    Things = ThingsApp()
+    xml = Xml()
+    with xml.things(xmlns='http://things.ivonet.nl'):
+        __printToDos(Things.toDos(), statusOpenOnly, xml)
+    return str(xml)
+
+
 if __name__ == "__main__":
-    print todayToXml()
+    print thingsToDos(False)
